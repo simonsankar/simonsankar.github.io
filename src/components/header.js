@@ -32,8 +32,8 @@ export default function WithSubnavigation({ siteTitle }) {
   return (
     <Box>
       <Flex
-        bg={useColorModeValue("white", "gray.800")}
-        color={useColorModeValue("gray.600", "white")}
+        bg={useColorModeValue("brand.100", "brand.700")}
+        color={useColorModeValue("brand.600", "white")}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
@@ -41,9 +41,17 @@ export default function WithSubnavigation({ siteTitle }) {
       >
         <Flex flex={{ base: 1 }} justify={{ base: "left", md: "start" }}>
           <Text
+            as={GatsbyLink}
+            padding={4}
+            paddingright={4}
+            to="/"
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
             fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
+            color={useColorModeValue("brand.700", "white")}
+            _hover={{
+              background: useColorModeValue("brand.700", "white"),
+              color: "teal.500",
+            }}
           >
             Logo.
           </Text>
@@ -61,6 +69,7 @@ export default function WithSubnavigation({ siteTitle }) {
             }
             variant={"ghost"}
             aria-label={"Toggle Navigation"}
+            marginLeft="4"
           />
         </Flex>
 
@@ -77,9 +86,9 @@ export default function WithSubnavigation({ siteTitle }) {
 }
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue("gray.600", "gray.200")
-  const linkHoverColor = useColorModeValue("gray.800", "white")
-  const popoverContentBgColor = useColorModeValue("white", "gray.800")
+  const linkColor = useColorModeValue("brand.600", "brand.200")
+  const linkHoverColor = useColorModeValue("brand.700", "white")
+  const popoverContentBgColor = useColorModeValue("white", "brand.700")
 
   return (
     <Stack align="center" direction={"row"} spacing={10}>
@@ -136,7 +145,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
       display={"block"}
       p={2}
       rounded={"md"}
-      _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
+      _hover={{ bg: useColorModeValue("pink.50", "brand.700") }}
     >
       <Stack direction={"row"} align={"center"}>
         <Box>
@@ -168,7 +177,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 const MobileNav = () => {
   return (
     <Stack
-      bg={useColorModeValue("white", "gray.800")}
+      bg={useColorModeValue("white", "brand.700")}
       p={4}
       display={{ md: "none" }}
     >
@@ -196,7 +205,7 @@ const MobileNavItem = ({ label, children, href }) => {
       >
         <Text
           fontWeight={600}
-          color={useColorModeValue("gray.600", "gray.200")}
+          color={useColorModeValue("brand.600", "brand.200")}
         >
           {label}
         </Text>
@@ -217,7 +226,7 @@ const MobileNavItem = ({ label, children, href }) => {
           pl={4}
           borderLeft={1}
           borderStyle={"solid"}
-          borderColor={useColorModeValue("gray.200", "gray.700")}
+          borderColor={useColorModeValue("brand.200", "brand.700")}
           align={"start"}
         >
           {children &&

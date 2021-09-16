@@ -41,13 +41,13 @@ const ListHeader = ({ children }) => {
 export default function LargeWithLogoLeft() {
   return (
     <Box
-      bg={useColorModeValue("gray.50", "gray.900")}
-      color={useColorModeValue("gray.700", "gray.200")}
+      bg={useColorModeValue("brand.100", "brand.700")}
+      color={useColorModeValue("brand.700", "brand.200")}
     >
       <Container as={Stack} maxW={"6xl"} py={10}>
         <Stack spacing={4} align="center">
           <Box>
-            <Logo color={useColorModeValue("gray.700", "white")} />
+            <Logo color={useColorModeValue("brand.700", "white")} />
           </Box>
           <Text fontSize={"sm"}>© 2021 Simon Sankar</Text>
         </Stack>

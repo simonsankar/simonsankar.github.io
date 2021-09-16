@@ -5,7 +5,6 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import "./layout.css"
 import "@fontsource/abel/400.css"
 import "@fontsource/nunito/400.css"
 
@@ -17,7 +16,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import Footer from "./footer"
 import Header from "./header"
 import PropTypes from "prop-types"
-import theme from "../theme"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -31,13 +29,13 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <ChakraProvider theme={theme} resetCSS={true} portalZIndex={40}>
+    <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <Box style={{ minHeight: `calc(100vh - 63px)` }} padding={"4"}>
+      <Box style={{ minHeight: `calc(100vh - 63px)` }} padding={8}>
         <main>{children}</main>
       </Box>
       <Footer></Footer>
-    </ChakraProvider>
+    </>
   )
 }
 
