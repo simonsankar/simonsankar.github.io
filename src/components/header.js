@@ -22,6 +22,7 @@ import {
   HamburgerIcon,
 } from "@chakra-ui/icons"
 
+import { Link as GatsbyLink } from "gatsby"
 import React from "react"
 import ToggleColourMode from "./toggleColourMode"
 
@@ -87,8 +88,9 @@ const DesktopNav = () => {
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Link
+                as={GatsbyLink}
                 p={2}
-                href={navItem.href ?? "#"}
+                to={navItem.href ?? "#"}
                 fontSize={"sm"}
                 fontWeight={500}
                 color={linkColor}
@@ -128,7 +130,8 @@ const DesktopNav = () => {
 const DesktopSubNav = ({ label, href, subLabel }) => {
   return (
     <Link
-      href={href}
+      as={GatsbyLink}
+      to={href}
       role={"group"}
       display={"block"}
       p={2}
@@ -247,10 +250,10 @@ const NAV_ITEMS = [
   //   },
   {
     label: "Blog",
-    href: "#",
+    href: "/blog",
   },
   {
     label: "Projects",
-    href: "#",
+    href: "/projects",
   },
 ]
