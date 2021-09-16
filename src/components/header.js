@@ -33,28 +33,39 @@ export default function WithSubnavigation({ siteTitle }) {
     <Box>
       <Flex
         bg={useColorModeValue("brand.100", "brand.700")}
-        color={useColorModeValue("brand.600", "white")}
+        color={useColorModeValue("brand.700", "brand.50")}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
         align={"center"}
       >
         <Flex flex={{ base: 1 }} justify={{ base: "left", md: "start" }}>
-          <Text
+          <Link
             as={GatsbyLink}
             padding={4}
             paddingright={4}
             to="/"
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
             fontFamily={"heading"}
-            color={useColorModeValue("brand.700", "white")}
+            fontSize="3xl"
+            color={useColorModeValue("brand.700", "brand.100")}
             _hover={{
-              background: useColorModeValue("brand.700", "white"),
-              color: "teal.500",
+              textDecoration: "none",
+              color: useColorModeValue("brand.900", "brand.50"),
+            }}
+            position="relative"
+            _after={{
+              content: '""',
+              w: "100%",
+              h: 1,
+              bg: "brand.300",
+              pos: "absolute",
+              bottom: 1,
+              right: 0,
             }}
           >
             Logo.
-          </Text>
+          </Link>
         </Flex>
         <Flex
           flex={{ base: "right", md: "auto" }}
@@ -87,8 +98,8 @@ export default function WithSubnavigation({ siteTitle }) {
 
 const DesktopNav = () => {
   const linkColor = useColorModeValue("brand.600", "brand.200")
-  const linkHoverColor = useColorModeValue("brand.700", "white")
-  const popoverContentBgColor = useColorModeValue("white", "brand.700")
+  const linkHoverColor = useColorModeValue("brand.700", "brand.50")
+  const popoverContentBgColor = useColorModeValue("brand.50", "brand.700")
 
   return (
     <Stack align="center" direction={"row"} spacing={10}>
@@ -100,7 +111,7 @@ const DesktopNav = () => {
                 as={GatsbyLink}
                 p={2}
                 to={navItem.href ?? "#"}
-                fontSize={"sm"}
+                fontSize={"xl"}
                 fontWeight={500}
                 color={linkColor}
                 _hover={{
@@ -177,7 +188,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 const MobileNav = () => {
   return (
     <Stack
-      bg={useColorModeValue("white", "brand.700")}
+      bg={useColorModeValue("brand.50", "brand.700")}
       p={4}
       display={{ md: "none" }}
     >
