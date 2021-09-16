@@ -24,7 +24,7 @@ import {
 
 import React from "react"
 
-export default function WithSubnavigation() {
+export default function WithSubnavigation({ siteTitle }) {
   const { isOpen, onToggle } = useDisclosure()
 
   return (
@@ -54,49 +54,18 @@ export default function WithSubnavigation() {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+        <Flex flex={{ base: 1 }} justify={{ base: "right", md: "start" }}>
           <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
+            textAlign={useBreakpointValue({ base: "right", md: "left" })}
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-            Logo
+            Logo.
           </Text>
-
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
-            <DesktopNav />
-          </Flex>
         </Flex>
-
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={6}
-        >
-          <Button
-            as={"a"}
-            fontSize={"sm"}
-            fontWeight={400}
-            variant={"link"}
-            href={"#"}
-          >
-            Sign In
-          </Button>
-          <Button
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"pink.400"}
-            href={"#"}
-            _hover={{
-              bg: "pink.300",
-            }}
-          >
-            Sign Up
-          </Button>
-        </Stack>
+        <Flex display={{ base: "none", md: "flex" }}>
+          <DesktopNav />
+        </Flex>
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
@@ -260,42 +229,27 @@ const MobileNavItem = ({ label, children, href }) => {
 }
 
 const NAV_ITEMS = [
+  //   {
+  //     label: "Top Level",
+  //     children: [
+  //       {
+  //         label: "Sub Level",
+  //         subLabel: "Find your dream design job",
+  //         href: "#",
+  //       },
+  //       {
+  //         label: "Freelance Projects",
+  //         subLabel: "An exclusive list for contract work",
+  //         href: "#",
+  //       },
+  //     ],
+  //   },
   {
-    label: "Inspiration",
-    children: [
-      {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
-        href: "#",
-      },
-      {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
-        href: "#",
-      },
-    ],
-  },
-  {
-    label: "Find Work",
-    children: [
-      {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
-        href: "#",
-      },
-      {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
-        href: "#",
-      },
-    ],
-  },
-  {
-    label: "Learn Design",
+    label: "Blog",
     href: "#",
   },
   {
-    label: "Hire Designers",
+    label: "Projects",
     href: "#",
   },
 ]

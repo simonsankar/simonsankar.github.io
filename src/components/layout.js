@@ -11,9 +11,9 @@ import "@fontsource/nunito/400.css"
 
 import * as React from "react"
 
+import { Box, ChakraProvider } from "@chakra-ui/react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import { ChakraProvider } from "@chakra-ui/react"
 import Footer from "./footer"
 import Header from "./header"
 import PropTypes from "prop-types"
@@ -33,15 +33,9 @@ const Layout = ({ children }) => {
   return (
     <ChakraProvider theme={theme} resetCSS={true} portalZIndex={40}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <Box padding={"4"}>
         <main>{children}</main>
-      </div>
+      </Box>
       <Footer></Footer>
     </ChakraProvider>
   )
