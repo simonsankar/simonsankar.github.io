@@ -10,7 +10,6 @@ import "@fontsource/nunito/400.css"
 
 import * as React from "react"
 
-import { Box, ChakraProvider } from "@chakra-ui/react"
 import { graphql, useStaticQuery } from "gatsby"
 
 import Footer from "./footer"
@@ -31,9 +30,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <Box style={{ minHeight: `calc(100vh - 63px)` }} padding={8}>
-        <main>{children}</main>
-      </Box>
+
+      {children}
       <Footer></Footer>
     </>
   )
