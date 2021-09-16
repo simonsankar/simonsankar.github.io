@@ -45,25 +45,12 @@ export default function LargeWithLogoLeft() {
       color={useColorModeValue("gray.700", "gray.200")}
     >
       <Container as={Stack} maxW={"6xl"} py={10}>
-        <SimpleGrid
-          templateColumns={{ sm: "1fr 1fr", md: "2fr 1fr" }}
-          spacing={8}
-        >
-          <Stack spacing={6}>
-            <Box>
-              <Logo color={useColorModeValue("gray.700", "white")} />
-            </Box>
-            <Text fontSize={"sm"}>
-              © 2020 Chakra Templates. All rights reserved
-            </Text>
-          </Stack>
-
-          <Stack align={"flex-start"}>
-            <ListHeader>Follow Us</ListHeader>
-            <Link href={"#"}>Facebook</Link>
-            <Link href={"#"}>Twitter</Link>
-          </Stack>
-        </SimpleGrid>
+        <Stack spacing={4} align="center">
+          <Box>
+            <Logo color={useColorModeValue("gray.700", "white")} />
+          </Box>
+          <Text fontSize={"sm"}>© 2021 Simon Sankar</Text>
+        </Stack>
       </Container>
     </Box>
   )

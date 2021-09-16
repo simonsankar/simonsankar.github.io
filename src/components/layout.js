@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
   return (
     <ChakraProvider theme={theme} resetCSS={true} portalZIndex={40}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <Box padding={"4"}>
+      <Box style={{ minHeight: `calc(100vh - 63px)` }} padding={"4"}>
         <main>{children}</main>
       </Box>
       <Footer></Footer>
