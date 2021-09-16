@@ -23,6 +23,7 @@ import {
 } from "@chakra-ui/icons"
 
 import React from "react"
+import ToggleColourMode from "./toggleColourMode"
 
 export default function WithSubnavigation({ siteTitle }) {
   const { isOpen, onToggle } = useDisclosure()
@@ -40,11 +41,21 @@ export default function WithSubnavigation({ siteTitle }) {
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
       >
+        <Flex flex={{ base: 1 }} justify={{ base: "left", md: "start" }}>
+          <Text
+            textAlign={useBreakpointValue({ base: "center", md: "left" })}
+            fontFamily={"heading"}
+            color={useColorModeValue("gray.800", "white")}
+          >
+            Logo.
+          </Text>
+        </Flex>
         <Flex
-          flex={{ base: 1, md: "auto" }}
+          flex={{ base: "right", md: "auto" }}
           ml={{ base: -2 }}
           display={{ base: "flex", md: "none" }}
         >
+          <ToggleColourMode />
           <IconButton
             onClick={onToggle}
             icon={
@@ -54,15 +65,7 @@ export default function WithSubnavigation({ siteTitle }) {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "right", md: "start" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "right", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
-          >
-            Logo.
-          </Text>
-        </Flex>
+
         <Flex display={{ base: "none", md: "flex" }}>
           <DesktopNav />
         </Flex>
@@ -81,7 +84,7 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue("white", "gray.800")
 
   return (
-    <Stack direction={"row"} spacing={4}>
+    <Stack align="center" direction={"row"} spacing={10}>
       {NAV_ITEMS.map(navItem => (
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
@@ -120,6 +123,7 @@ const DesktopNav = () => {
           </Popover>
         </Box>
       ))}
+      <ToggleColourMode />
     </Stack>
   )
 }

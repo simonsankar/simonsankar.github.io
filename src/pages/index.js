@@ -5,12 +5,16 @@ import Layout from "../components/layout"
 import { Link } from "gatsby"
 import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
+import ToggleColourMode from "../components/toggleColourMode"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <Heading>BLOG</Heading>
-    <p>Welcome to your new Gatsby site.</p>
+    <p>
+      Welcome to your new Gatsby site.
+      <ToggleColourMode />
+    </p>
     <p>Now go build something great.</p>
     <StaticImage
       src="../images/gatsby-astronaut.png"
