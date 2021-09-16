@@ -42,8 +42,8 @@ export default function WithSubnavigation({ siteTitle }) {
         <Flex flex={{ base: 1 }} justify={{ base: "left", md: "start" }}>
           <Link
             as={GatsbyLink}
-            padding={4}
-            paddingright={4}
+            margin={4}
+            paddingBottom={1}
             to="/"
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
             fontFamily={"heading"}
@@ -60,7 +60,7 @@ export default function WithSubnavigation({ siteTitle }) {
               h: 1,
               bg: "brand.300",
               pos: "absolute",
-              bottom: 1,
+              bottom: 0,
               right: 0,
             }}
           >
