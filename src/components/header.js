@@ -43,28 +43,33 @@ export default function WithSubnavigation({ siteTitle }) {
           <Link
             as={GatsbyLink}
             margin={4}
-            paddingBottom={1}
+            paddingBlock={0.5}
+            paddingInline={2}
             to="/"
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
             fontFamily={"heading"}
             fontSize="3xl"
+            fontWeight="bold"
+            letterSpacing="wider"
+            border="2px"
+            borderBottom="6px solid"
             color={useColorModeValue("brand.700", "brand.100")}
             _hover={{
               textDecoration: "none",
               color: useColorModeValue("brand.900", "brand.50"),
             }}
             position="relative"
-            _after={{
-              content: '""',
-              w: "100%",
-              h: 1,
-              bg: "brand.300",
-              pos: "absolute",
-              bottom: 0,
-              right: 0,
-            }}
+            // _after={{
+            //   content: '""',
+            //   w: "100%",
+            //   h: 1,
+            //   bg: "brand.300",
+            //   pos: "absolute",
+            //   bottom: 0,
+            //   right: 0,
+            // }}
           >
-            Logo.
+            SS
           </Link>
         </Flex>
         <Flex
