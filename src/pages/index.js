@@ -24,7 +24,7 @@ const IndexPage = () => (
       justifyContent="space-around"
     >
       <Flex direction="column">
-        <Box padding={10}>
+        <Box paddingInline={10}>
           <Text fontFamily="Faustina" fontSize="5xl">
             Hi There,
           </Text>
