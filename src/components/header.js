@@ -11,7 +11,6 @@ import {
   PopoverTrigger,
   Stack,
   Text,
-  useBreakpointValue,
   useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react"
@@ -23,6 +22,7 @@ import {
 } from "@chakra-ui/icons"
 
 import { Link as GatsbyLink } from "gatsby"
+import Logo from "./logo"
 import React from "react"
 import ToggleColourMode from "./toggleColourMode"
 
@@ -40,37 +40,7 @@ export default function WithSubnavigation({ siteTitle }) {
         align={"center"}
       >
         <Flex flex={{ base: 1 }} justify={{ base: "left", md: "start" }}>
-          <Link
-            as={GatsbyLink}
-            margin={4}
-            paddingBlock={0.5}
-            paddingInline={2}
-            to="/"
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            fontSize="3xl"
-            fontWeight="bold"
-            letterSpacing="wider"
-            border="2px"
-            borderBottom="6px solid"
-            color={useColorModeValue("brand.700", "brand.100")}
-            _hover={{
-              textDecoration: "none",
-              color: useColorModeValue("brand.900", "brand.50"),
-            }}
-            position="relative"
-            // _after={{
-            //   content: '""',
-            //   w: "100%",
-            //   h: 1,
-            //   bg: "brand.300",
-            //   pos: "absolute",
-            //   bottom: 0,
-            //   right: 0,
-            // }}
-          >
-            SS
-          </Link>
+          <Logo />
         </Flex>
         <Flex
           flex={{ base: "right", md: "auto" }}

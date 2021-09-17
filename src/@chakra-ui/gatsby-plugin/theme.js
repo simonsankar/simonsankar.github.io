@@ -22,6 +22,9 @@ const theme = extendTheme({
       900: " #050c18",
     },
   },
+  shadows: {
+    outline: `0 0 0 3px #58708d`,
+  },
   styles: {
     global: props => ({
       body: {

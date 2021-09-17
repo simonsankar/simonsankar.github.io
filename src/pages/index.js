@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { Box, Heading } from "@chakra-ui/react"
+import { Box, Heading, useColorModeValue } from "@chakra-ui/react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -16,6 +16,8 @@ const IndexPage = () => (
       width="full"
       style={{ minHeight: `calc(100vh - 63px)` }}
       padding={8}
+      bg={useColorModeValue("brand.100", "brand.700")}
+      color={useColorModeValue("brand.700", "brand.50")}
     >
       <Heading>BLOG</Heading>
       <p>
