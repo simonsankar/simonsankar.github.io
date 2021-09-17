@@ -1,5 +1,5 @@
 ---
-title: Another Blog post
+title: Another Blog posts
 date: 2021-09-17T02:35:09.108Z
 description: descriptive text
 ---
