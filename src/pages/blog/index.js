@@ -13,7 +13,7 @@ const RenderBlogs = ({ data }) => {
         height="full"
         width="full"
         style={{
-          minHeight: `calc(100vh - 63px)`,
+          minHeight: `calc(100vh - 105px)`,
         }}
         padding={8}
       >

@@ -9,8 +9,7 @@ const theme = extendTheme({
     body: "Poppins",
   },
   colors: {
-    brand: {
-      50: " #e8f3fe",
+    gray: {
       100: " #cdd8e6",
       200: " #afbed0",
       300: " #90a4bb",
@@ -28,8 +27,8 @@ const theme = extendTheme({
   styles: {
     global: props => ({
       body: {
-        color: mode("brand.800", "brand.100")(props),
-        bg: mode("gray.50", "brand.600")(props),
+        color: mode("gray.800", "gray.100")(props),
+        bg: mode("gray.50", "gray.600")(props),
       },
     }),
   },

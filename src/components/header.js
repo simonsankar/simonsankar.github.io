@@ -31,8 +31,8 @@ export default function WithSubnavigation({ siteTitle }) {
   return (
     <Box>
       <Flex
-        bg={useColorModeValue("brand.100", "brand.700")}
-        color={useColorModeValue("brand.700", "brand.50")}
+        bg={useColorModeValue("gray.100", "gray.700")}
+        color={useColorModeValue("gray.700", "gray.50")}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
@@ -71,9 +71,9 @@ export default function WithSubnavigation({ siteTitle }) {
 }
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue("brand.600", "brand.200")
-  const linkHoverColor = useColorModeValue("brand.700", "brand.50")
-  const popoverContentBgColor = useColorModeValue("brand.50", "brand.700")
+  const linkColor = useColorModeValue("gray.600", "gray.200")
+  const linkHoverColor = useColorModeValue("gray.700", "gray.50")
+  const popoverContentBgColor = useColorModeValue("gray.50", "gray.700")
 
   return (
     <Stack align="center" direction={"row"} spacing={10}>
@@ -130,7 +130,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
       display={"block"}
       p={2}
       rounded={"md"}
-      _hover={{ bg: useColorModeValue("pink.50", "brand.700") }}
+      _hover={{ bg: useColorModeValue("pink.50", "gray.700") }}
     >
       <Stack direction={"row"} align={"center"}>
         <Box>
@@ -162,7 +162,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 const MobileNav = () => {
   return (
     <Stack
-      bg={useColorModeValue("brand.50", "brand.700")}
+      bg={useColorModeValue("gray.50", "gray.700")}
       p={4}
       display={{ md: "none" }}
     >
@@ -190,7 +190,7 @@ const MobileNavItem = ({ label, children, href }) => {
       >
         <Text
           fontWeight={600}
-          color={useColorModeValue("brand.600", "brand.200")}
+          color={useColorModeValue("gray.600", "gray.200")}
         >
           {label}
         </Text>
@@ -211,7 +211,7 @@ const MobileNavItem = ({ label, children, href }) => {
           pl={4}
           borderLeft={1}
           borderStyle={"solid"}
-          borderColor={useColorModeValue("brand.200", "brand.700")}
+          borderColor={useColorModeValue("gray.200", "gray.700")}
           align={"start"}
         >
           {children &&

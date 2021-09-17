@@ -12,7 +12,7 @@ function AboutPage({ data }) {
       <Box
         height="full"
         width="full"
-        style={{ minHeight: `calc(100vh - 63px)` }}
+        style={{ minHeight: `calc(100vh - 105px)` }}
         padding={8}
       >
         <Heading>About page</Heading>

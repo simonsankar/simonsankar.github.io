@@ -11,7 +11,7 @@ const BlogPost = ({ data }) => {
       <Box
         height="full"
         width="full"
-        style={{ minHeight: `calc(100vh - 63px)` }}
+        style={{ minHeight: `calc(100vh - 105px)` }}
         padding={8}
       >
         <Seo title={post.frontmatter.title} />

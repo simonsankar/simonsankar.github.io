@@ -18,17 +18,17 @@ const Logo = () => {
       letterSpacing="wider"
       border="2px"
       borderBottom="6px solid"
-      color={useColorModeValue("brand.700", "brand.100")}
+      color={useColorModeValue("gray.700", "gray.100")}
       _hover={{
         textDecoration: "none",
-        color: useColorModeValue("brand.900", "brand.50"),
+        color: useColorModeValue("gray.900", "gray.50"),
       }}
       position="relative"
       // _after={{
       //   content: '""',
       //   w: "100%",
       //   h: 1,
-      //   bg: "brand.300",
+      //   bg: "gray.300",
       //   pos: "absolute",
       //   bottom: 0,
       //   right: 0,
