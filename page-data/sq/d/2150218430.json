@@ -1,1 +1,1 @@
-{"data":{"allMarkdownRemark":{"nodes":[{"frontmatter":{"title":"Another Blog posts","date":"2021-09-17T02:35:09.108Z","description":"descriptive text"}},{"frontmatter":{"title":"Some blog posts","date":"2021-09-17T01:57:18.263Z","description":"Just some text here"}}],"totalCount":2}}}
+{"data":{"allMarkdownRemark":{"nodes":[{"frontmatter":{"title":"About me","date":null,"description":null}},{"frontmatter":{"title":"My first blog","date":"2021-09-17T17:11:12.660Z","description":"nothing here"}}],"totalCount":2}}}

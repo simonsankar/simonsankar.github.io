@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-templates-tags-js-d456ccfb9cdd1068ad81.js","mappings":"0JAMA,UAJa,WACX,OAAO","sources":["webpack://gatsby-starter-default/./src/templates/tags.js"],"sourcesContent":["import React from \"react\"\n\nconst Tags = () => {\n  return <div>I am a tags for now</div>\n}\n\nexport default Tags\n"],"names":[],"sourceRoot":""}

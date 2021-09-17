@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[307],{5759:function(t,e,a){a.r(e);var r=a(7294);e.default=function(){return r.createElement("div",null,"I am tags in page form")}}}]);
+//# sourceMappingURL=component---src-pages-tags-index-js-59db7591bc4c3597081b.js.map
