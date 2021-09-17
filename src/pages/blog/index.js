@@ -5,7 +5,8 @@ import Layout from "../../components/layout"
 import React from "react"
 import Seo from "../../components/seo"
 
-const BlogIndexPage = ({ data, count }) => {
+const BlogIndexPage = ({ data }) => {
+  const { allMarkdownRemark } = data
   return (
     <Layout>
       <Seo title="Blog" />
@@ -16,7 +17,9 @@ const BlogIndexPage = ({ data, count }) => {
         padding={8}
       >
         <Heading>BLOG</Heading>
-        <pre>{JSON.stringify(data, null, 2)}</pre>
+        {allMarkdownRemark.nodes.map(node => (
+          <div>{node.frontmatter.title}</div>
+        ))}
       </Box>
     </Layout>
   )
@@ -37,6 +40,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <BlogIndexPage data={data} count={count} />}
+    render={(data, count) => <BlogIndexPage data={data} />}
   />
 )
