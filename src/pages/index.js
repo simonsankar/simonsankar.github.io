@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import { Box, Heading, useColorModeValue } from "@chakra-ui/react"
-import { Link, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"

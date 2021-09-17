@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Collapse,
   Flex,
   Icon,
@@ -243,6 +242,10 @@ const NAV_ITEMS = [
   //       },
   //     ],
   //   },
+  {
+    label: "About",
+    href: "/about",
+  },
   {
     label: "Blog",
     href: "/blog",

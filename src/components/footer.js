@@ -1,8 +1,6 @@
 import {
   Box,
   Container,
-  Link,
-  SimpleGrid,
   Stack,
   Text,
   useColorModeValue,
@@ -10,14 +8,6 @@ import {
 
 import Logo from "./logo"
 import React from "react"
-
-const ListHeader = ({ children }) => {
-  return (
-    <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
-      {children}
-    </Text>
-  )
-}
 
 export default function LargeWithLogoLeft() {
   return (
