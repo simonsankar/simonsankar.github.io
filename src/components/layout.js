@@ -5,8 +5,8 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import "@fontsource/abel/400.css"
-import "@fontsource/nunito/400.css"
+import "@fontsource/faustina/400.css"
+import "@fontsource/poppins/400.css"
 
 import * as React from "react"
 

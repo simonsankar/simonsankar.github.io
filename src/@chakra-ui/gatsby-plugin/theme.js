@@ -5,8 +5,8 @@ const theme = extendTheme({
   fonts: {
     initialColorMode: "light",
     useSystemColorMode: true,
-    heading: "Abel",
-    body: "Nunito",
+    heading: "Faustina",
+    body: "Poppins",
   },
   colors: {
     brand: {
@@ -23,7 +23,7 @@ const theme = extendTheme({
     },
   },
   shadows: {
-    outline: `0 0 0 3px #58708d`,
+    outline: `0 0 0 2px #58708d`,
   },
   styles: {
     global: props => ({
