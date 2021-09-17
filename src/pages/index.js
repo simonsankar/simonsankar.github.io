@@ -1,17 +1,16 @@
 import * as React from "react"
 
 import { Box, Flex, useColorModeValue, Stack, Text } from "@chakra-ui/react"
-import { Link } from "gatsby"
+import { Link } from "@chakra-ui/react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
-import ToggleColourMode from "../components/toggleColourMode"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <Stack
+    <Flex
       direction={["column", "row"]}
       height="full"
       width="full"
@@ -22,44 +21,58 @@ const IndexPage = () => (
       flex={1}
       position="relative"
       align="center"
+      justifyContent="space-around"
     >
       <Flex direction="column">
-        <Box padding={10} bg={useColorModeValue("gray.200", "gray.600")}>
-          <Text fontSize="3xl">Hi There,</Text>
+        <Box padding={10}>
+          <Text fontFamily="Faustina" fontSize="5xl">
+            Hi There,
+          </Text>
           <span>
-            <Text fontSize="5xl" display="inline" marginRight={2}>
+            <Text fontSize="7xl" display="inline" marginRight={2}>
               I am
             </Text>
             <Text
-              fontSize="5xl"
-              color={useColorModeValue("gray.500", "gray.200")}
+              fontSize="7xl"
+              fontWeight="bold"
+              color={useColorModeValue("brand.400", "brand.300")}
               display="inline-block"
             >
               Simon Sankar
             </Text>
           </span>
-          <Text>
-            Welcome to your new Gatsby site.
-            <ToggleColourMode />
+          <Text fontFamily="Faustina" fontSize="3xl">
+            Apart from being a{" "}
+            <Link
+              href="https://en.wikipedia.org/wiki/Lionel_Messi"
+              alt="Lionel Messi"
+              target="_blank"
+              color={useColorModeValue("gray.600", "gray.100")}
+            >
+              Lionel Messi
+            </Link>{" "}
+            acoloyte, I build things for the web!
           </Text>
         </Box>
       </Flex>
-      <Box flex={1}>
-        <p>Now go build something great.</p>
-        <StaticImage
-          src="../images/gatsby-astronaut.png"
-          width={300}
-          quality={95}
-          formats={["auto", "webp", "avif"]}
-          alt="A Gatsby astronaut"
-          style={{ marginBottom: `1.45rem` }}
-        />
-        <p>
-          <Link to="/page-2/">Go to page 2</Link> <br />
-          <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-        </p>
-      </Box>
-    </Stack>
+      <Flex align="center" justify="center">
+        <Box border="5px solid" borderBottomWidth="40px" padding={4}>
+          <p>Now go build something great.</p>
+          <StaticImage
+            src="../images/gatsby-astronaut.png"
+            width={300}
+            quality={95}
+            formats={["auto", "webp", "avif"]}
+            alt="A Gatsby astronaut"
+            style={{ marginBottom: `1.45rem` }}
+          />
+          <p>
+            <Link to="/page-2/">Go to page 2</Link> <br />
+            <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+          </p>
+        </Box>
+      </Flex>
+    </Flex>
   </Layout>
 )
 
