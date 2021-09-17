@@ -28,8 +28,8 @@ const theme = extendTheme({
   styles: {
     global: props => ({
       body: {
-        color: mode("brand.800", "brand.200")(props),
-        bg: mode("gray.50", "brand.800")(props),
+        color: mode("brand.800", "brand.100")(props),
+        bg: mode("gray.50", "brand.600")(props),
       },
     }),
   },
