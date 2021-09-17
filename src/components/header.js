@@ -187,6 +187,7 @@ const MobileNavItem = ({ label, children, href }) => {
         _hover={{
           textDecoration: "none",
         }}
+        paddingInline={4}
       >
         <Text
           fontWeight={600}
