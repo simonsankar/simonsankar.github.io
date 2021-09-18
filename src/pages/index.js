@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { Box, Flex, useColorModeValue, Stack, Text } from "@chakra-ui/react"
+import { Box, Flex, useColorModeValue, Heading, Text } from "@chakra-ui/react"
 import { Link } from "@chakra-ui/react"
 
 import Layout from "../components/layout"
@@ -24,7 +24,7 @@ const IndexPage = () => (
       justifyContent="space-around"
     >
       <Flex direction="column">
-        <Box paddingInline={10}>
+        <Box paddingInline={10} borderLeft="5px solid">
           <Text fontFamily="Faustina" fontSize="5xl">
             Hi There,
           </Text>
@@ -37,6 +37,7 @@ const IndexPage = () => (
               fontWeight="bold"
               color={useColorModeValue("brand.400", "brand.300")}
               display="inline-block"
+              position="relative"
             >
               Simon Sankar
             </Text>

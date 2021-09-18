@@ -16,10 +16,8 @@ export default function LargeWithLogoLeft() {
       color={useColorModeValue("gray.800", "gray.200")}
     >
       <Container as={Stack} maxW={"6xl"} py={10}>
-        <Stack spacing={4} align="center">
-          <Box>
-            <Logo />
-          </Box>
+        <Stack spacing={0} align="center">
+          <Logo />
           <Text fontSize={"sm"}>© 2021 Simon Sankar</Text>
         </Stack>
       </Container>

@@ -9,7 +9,7 @@ const Logo = () => {
       as={GatsbyLink}
       margin={4}
       paddingBlock={0.5}
-      paddingInline={2}
+      paddingInline={"2.5"}
       to="/"
       textAlign={useBreakpointValue({ base: "center", md: "left" })}
       fontFamily={"heading"}

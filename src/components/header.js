@@ -87,6 +87,7 @@ const DesktopNav = () => {
                 to={navItem.href ?? "#"}
                 fontSize={"xl"}
                 fontWeight={500}
+                textTransform="uppercase"
                 color={linkColor}
                 _hover={{
                   textDecoration: "none",
@@ -162,7 +163,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 const MobileNav = () => {
   return (
     <Stack
-      bg={useColorModeValue("gray.50", "gray.700")}
+      bg={useColorModeValue("gray.50", "gray.600")}
       p={4}
       display={{ md: "none" }}
     >
@@ -191,7 +192,8 @@ const MobileNavItem = ({ label, children, href }) => {
       >
         <Text
           fontWeight={600}
-          color={useColorModeValue("gray.600", "gray.200")}
+          textTransform="uppercase"
+          color={useColorModeValue("gray.600", "gray.100")}
         >
           {label}
         </Text>
