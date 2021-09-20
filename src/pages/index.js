@@ -99,6 +99,7 @@ const IndexPage = () => (
                   <Text
                     fontSize={{ base: "4xl", md: "6xl", lg: "7xl", xl: "7xl" }}
                     display="inline"
+                    fontWeight="medium"
                     color={useColorModeValue("gray.700", "gray.100")}
                     marginRight={2}
                   >
@@ -114,19 +115,21 @@ const IndexPage = () => (
               </Text>
               <Text
                 display="block"
-                fontSize={{ base: "lg", md: "1xl", lg: "2xl", xl: "3xl" }}
                 marginTop="4"
+                fontSize={{ base: "lg", md: "1xl", lg: "2xl", xl: "3xl" }}
+                color={useColorModeValue("gray.600", "gray.100")}
+                paddingRight={[0, 0, 0, 8, 200]}
               >
                 Apart from coding for the web, I am a{" "}
                 <Link
                   href="https://en.wikipedia.org/wiki/Lionel_Messi"
                   alt="Lionel Messi"
                   target="_blank"
-                  color={useColorModeValue("gray.600", "gray.100")}
+                  color={useColorModeValue("gray.700", "gray.200")}
                 >
                   Lionel Messi
                 </Link>{" "}
-                acoloyte.
+                acoloyte and an OG Minecrafter.
               </Text>
             </Box>
           </SlideFade>
