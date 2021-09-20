@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-blog-post-js",
+    "path": "/blog/2021-09-20-demmo/",
+    "result": {"data":{"markdownRemark":{"id":"4816dc70-2387-5559-b29a-d37980d6b678","html":"<p>something in the way</p>","frontmatter":{"date":"September 20, 2021","title":"Demmo","description":"Wemmi","tags":["dev"]}}},"pageContext":{"id":"4816dc70-2387-5559-b29a-d37980d6b678"}},
+    "staticQueryHashes": ["3649515864","63159454"]}

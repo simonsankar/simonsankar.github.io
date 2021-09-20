@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-blog-list-js",
+    "path": "/blog/2",
+    "result": {"data":{"allMarkdownRemark":{"nodes":[{"fields":{"slug":"/blog/2021-09-17-another-one/"},"frontmatter":{"title":"Another one","date":"2021-09-17","tags":["PATD","Rock"]}},{"fields":{"slug":"/blog/2021-09-17-my-first-blog/"},"frontmatter":{"title":"My first blog","date":"2021-09-17","tags":["dev","code","gatsby"]}}]}},"pageContext":{"limit":10,"skip":10,"numPages":2,"currentPage":2}},
+    "staticQueryHashes": ["3649515864","63159454"]}

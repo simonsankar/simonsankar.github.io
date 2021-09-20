@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-blog-post-js",
+    "path": "/blog/2021-09-20-seventhy/",
+    "result": {"data":{"markdownRemark":{"id":"b8cca445-97b7-5b16-9c2c-35458201bb7b","html":"<p>onASOIa</p>","frontmatter":{"date":"September 20, 2021","title":"Seventhy","description":"qweq\nasdad","tags":["cool"]}}},"pageContext":{"id":"b8cca445-97b7-5b16-9c2c-35458201bb7b"}},
+    "staticQueryHashes": ["3649515864","63159454"]}

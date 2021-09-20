@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-blog-post-js",
+    "path": "/blog/2021-09-20-wonderluist/",
+    "result": {"data":{"markdownRemark":{"id":"736508c0-ea23-5335-b84d-944198fa08a9","html":"<p>Amazing</p>","frontmatter":{"date":"September 20, 2021","title":"Wonderluist","description":"asd a dasd","tags":["PATD"]}}},"pageContext":{"id":"736508c0-ea23-5335-b84d-944198fa08a9"}},
+    "staticQueryHashes": ["3649515864","63159454"]}
