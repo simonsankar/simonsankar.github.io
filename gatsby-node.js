@@ -26,6 +26,28 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
     const posts = result.data.allMarkdownRemark.edges
+    const limit = 10
+    const numPages = Math.ceil(posts.length / limit)
+
+    // Create blog posts pages
+    // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
+    // `context` is available in the template as a prop and as a variable in GraphQL
+
+    // Blog list page
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+        component: path.resolve(`src/templates/blog-list.js`),
+        context: {
+          limit,
+          skip: i * limit,
+          numPages,
+          currentPage: i + 1,
+        },
+      })
+    })
+
+    // Each blog post page
     posts.forEach(edge => {
       const id = edge.node.id
       createPage({

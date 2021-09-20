@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 function AboutPage({ data }) {
+  const { frontmatter } = data.markdownRemark
   return (
     <Layout>
       <Seo title="About" />
@@ -15,7 +16,7 @@ function AboutPage({ data }) {
         style={{ minHeight: `calc(100vh - 105px)` }}
         padding={8}
       >
-        <Heading>About page</Heading>
+        <Heading>{frontmatter.title}</Heading>
         {JSON.stringify(data)}
       </Box>
     </Layout>
