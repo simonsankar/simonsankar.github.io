@@ -26,7 +26,7 @@ const IndexPage = () => (
       height="full"
       width="full"
       style={{ minHeight: `calc(100vh - 105px)` }}
-      padding={8}
+      paddingInline={8}
       bg={useColorModeValue("gray.100", "gray.700")}
       color={useColorModeValue("gray.700", "gray.50")}
       flex={1}
@@ -113,9 +113,14 @@ const IndexPage = () => (
               >
                 a Front-End developer who loves building apps!
               </Text>
+              <Box
+                marginBlock="2"
+                height={[10, 20]}
+                borderLeftWidth="5px"
+              ></Box>
+
               <Text
                 display="block"
-                marginTop="4"
                 fontSize={{ base: "lg", md: "1xl", lg: "2xl", xl: "3xl" }}
                 color={useColorModeValue("gray.600", "gray.100")}
                 paddingRight={[0, 0, 0, 8, 200]}
