@@ -10,5 +10,16 @@ items:
       - reactjs
       - nextjs
       - strapi
+      - antd
       - less
+  - title: Personal Site
+    description: Finally got my act in order and made my own site.
+    image: /img/simonsankar.png
+    source: https://github.com/simonsankar/simonsankar.github.io
+    link: https://simonsankar.github.io/
+    tags:
+      - reactjs
+      - gatsby
+      - netlifycms
+      - chakraui
 ---
