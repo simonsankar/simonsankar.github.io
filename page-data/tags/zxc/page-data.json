@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-templates-tags-js",
+    "componentChunkName": "component---src-templates-tags-page-js",
     "path": "/tags/zxc/",
-    "result": {"pageContext":{"tag":"zxc"}},
-    "staticQueryHashes": []}
+    "result": {"data":{"allMarkdownRemark":{"nodes":[{"id":"d7e87d93-5766-5da9-a848-0b00e4a01341","fields":{"slug":"/blog/2021-09-20-a-ounce/"},"frontmatter":{"title":"A ounce","date":"20/09/2021","description":"qwe asdasd","image":"/img/afeveryoucantsweatout.jpg","tags":["zxc"]}}]}},"pageContext":{"tag":"zxc"}},
+    "staticQueryHashes": ["3649515864","63159454"]}

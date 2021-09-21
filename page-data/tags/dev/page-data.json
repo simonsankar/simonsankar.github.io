@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-templates-tags-js",
+    "componentChunkName": "component---src-templates-tags-page-js",
     "path": "/tags/dev/",
-    "result": {"pageContext":{"tag":"dev"}},
-    "staticQueryHashes": []}
+    "result": {"data":{"allMarkdownRemark":{"nodes":[{"id":"4816dc70-2387-5559-b29a-d37980d6b678","fields":{"slug":"/blog/2021-09-20-demmo/"},"frontmatter":{"title":"Demmo","date":"20/09/2021","description":"Wemmi","image":"/img/rubbersoul.jpg","tags":["dev"]}},{"id":"1097c1d4-2897-5c5f-b116-c9c2185ee4a1","fields":{"slug":"/blog/2021-09-20-another-fourth-post/"},"frontmatter":{"title":"Another Fourth post","date":"20/09/2021","description":"asdadas","image":"/img/afeveryoucantsweatout.jpg","tags":["dev"]}},{"id":"797560f2-b9a1-5c7d-8c68-c61926713fa6","fields":{"slug":"/blog/2021-09-17-my-first-blog/"},"frontmatter":{"title":"My first blog","date":"17/09/2021","description":"nothing here","image":"/img/rubbersoul.jpg","tags":["dev","code","gatsby"]}}]}},"pageContext":{"tag":"dev"}},
+    "staticQueryHashes": ["3649515864","63159454"]}

@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-templates-tags-js",
+    "componentChunkName": "component---src-templates-tags-page-js",
     "path": "/tags/patd/",
-    "result": {"pageContext":{"tag":"PATD"}},
-    "staticQueryHashes": []}
+    "result": {"data":{"allMarkdownRemark":{"nodes":[{"id":"736508c0-ea23-5335-b84d-944198fa08a9","fields":{"slug":"/blog/2021-09-20-wonderluist/"},"frontmatter":{"title":"Wonderluist","date":"20/09/2021","description":"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic","image":"https://images.unsplash.com/photo-1606166325683-e6deb697d301?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1185&q=80","tags":["PATD"]}},{"id":"9daa228c-3198-59fd-ab84-c0948bd93436","fields":{"slug":"/blog/2021-09-20-rapido-mapido/"},"frontmatter":{"title":"Rapido mapido","date":"20/09/2021","description":"asd ads","image":"/img/afeveryoucantsweatout.jpg","tags":["PATD"]}},{"id":"1de9cd86-7355-59da-86b9-14dd246b665b","fields":{"slug":"/blog/2021-09-20-third-is-the-word/"},"frontmatter":{"title":"Third is the word","date":"20/09/2021","description":"asdadad","image":"/img/afeveryoucantsweatout.jpg","tags":["PATD"]}},{"id":"79607f59-21c4-5f3a-b43d-62f83dd291a2","fields":{"slug":"/blog/2021-09-17-another-one/"},"frontmatter":{"title":"Another one","date":"17/09/2021","description":"Bites the dust","image":"/img/afeveryoucantsweatout.jpg","tags":["PATD","Rock"]}}]}},"pageContext":{"tag":"PATD"}},
+    "staticQueryHashes": ["3649515864","63159454"]}
