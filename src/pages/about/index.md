@@ -1,10 +1,10 @@
 ---
-title: About me
 templateKey: about-page
+title: About Me
 image: /img/rubbersoul.jpg
-heading: This is me
-subheading: ALso me
+heading: Simon Sankar
+subheading: D'Abadie, Trinidad and Tobago
 mainpitch:
-  title: something
-  description: fun
+  title: My Career So Far
+  description: fun stuff
 ---
