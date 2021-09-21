@@ -106,8 +106,9 @@ function AboutPage({ data }) {
                   variant="solid"
                   colorScheme="brand"
                   width="100%"
+                  textTransform="uppercase"
                 >
-                  RESUME
+                  Résumé
                 </Button>
                 <Divider marginBlock={4} />
 
