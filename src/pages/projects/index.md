@@ -25,4 +25,16 @@ items:
       - gatsbyjs
       - netlifycms
       - chakraui
+  - title: an_me
+    description: >-
+      An anime streaming desktop app built with electron and react.
+
+      Sadly the site that was being scrapped is now defunct, but I had a fun time working on with and even streamed Attack on Titan ad free!
+    image: /img/an_me.png
+    source: https://github.com/simonsankar/an_me
+    tags:
+      - reactjs
+      - electronjs
+      - antd
+      - less
 ---
