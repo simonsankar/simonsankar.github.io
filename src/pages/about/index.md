@@ -20,5 +20,8 @@ tags:
   - GatsbyJS
   - NextJS
   - NuxtJS
+  - Jest
+  - Cypress
   - Flutter
+  - Git
 ---
