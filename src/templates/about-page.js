@@ -26,7 +26,7 @@ function AboutPage({ data }) {
   const { frontmatter } = data.markdownRemark
   return (
     <Layout>
-      <Seo title="Blog" />
+      <Seo title={"About"} />
       <Flex
         direction="column"
         height="full"

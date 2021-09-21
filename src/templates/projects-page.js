@@ -1,3 +1,4 @@
+import React from "react"
 import {
   Flex,
   SlideFade,
@@ -12,83 +13,97 @@ import {
   Link,
   Divider,
   HStack,
+  Tag,
   useColorModeValue,
 } from "@chakra-ui/react"
 
 import Layout from "../components/layout"
-import React from "react"
+import { graphql } from "gatsby"
 import Seo from "../components/seo"
 
-const ProjectItem = () => {
+const ProjectItem = ({ item }) => {
   return (
     <Center py={6}>
       <Box
         maxW={"445px"}
         w={"full"}
-        bg={useColorModeValue("white", "gray.900")}
-        boxShadow={"2xl"}
+        bg={useColorModeValue("white", "gray.500")}
+        boxShadow={"xl"}
         rounded={"md"}
         p={6}
         overflow={"hidden"}
       >
         <Box bg={"gray.100"} mt={-6} mx={-6} mb={6} pos={"relative"}>
-          <Image
-            src={
-              "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-            }
-            layout={"fill"}
-          />
+          <Image src={item.image} layout={"fill"} />
         </Box>
         <Stack>
+          <HStack spacing={2}>
+            {item.tags.map(tag => {
+              return (
+                <Tag
+                  size={"sm"}
+                  variant="subtle"
+                  colorScheme="gray"
+                  key={item.title + tag}
+                >
+                  {tag}
+                </Tag>
+              )
+            })}
+          </HStack>
           <Heading
-            color={useColorModeValue("gray.700", "white")}
+            color={useColorModeValue("gray.700", "gray.50")}
             fontSize={"2xl"}
             fontFamily={"body"}
           >
-            Boost your conversion rate
+            {item.title}
           </Heading>
-          <Text color={"gray.500"}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
+          <Text color={useColorModeValue("gray.600", "gray.100")}>
+            {item.description}
           </Text>
         </Stack>
         <Divider marginBlock={4} />
         <HStack spacing={2} align="right" justifyContent="end">
-          <Button
-            as={Link}
-            href="https://docs.google.com/document/d/1qA5lSskEknnegBoC3FRVeK4KRCb9rsAuDetArvRg7rM/edit?usp=sharing"
-            target="_blank"
-            alt="Resume"
-            variant="solid"
-            size="md"
-            colorScheme="brand"
-            textTransform="uppercase"
-          >
-            View
-          </Button>
-          <Button
-            as={Link}
-            href="https://docs.google.com/document/d/1qA5lSskEknnegBoC3FRVeK4KRCb9rsAuDetArvRg7rM/edit?usp=sharing"
-            target="_blank"
-            alt="Resume"
-            variant="solid"
-            size="md"
-            colorScheme="gray"
-            textTransform="uppercase"
-          >
-            Source
-          </Button>
+          {item.link ? (
+            <Button
+              as={Link}
+              href={item.link}
+              target="_blank"
+              alt="Resume"
+              variant="solid"
+              size="sm"
+              colorScheme="brand"
+              textTransform="uppercase"
+            >
+              View
+            </Button>
+          ) : null}
+          {item.source ? (
+            <Button
+              as={Link}
+              href={item.source}
+              target="_blank"
+              alt="Resume"
+              variant="solid"
+              size="sm"
+              colorScheme="gray"
+              textTransform="uppercase"
+            >
+              Source
+            </Button>
+          ) : null}
         </HStack>
       </Box>
     </Center>
   )
 }
 
-const ProjectsPage = () => {
+const ProjectsPage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark
+
   return (
     <Layout>
-      <Seo title="Projects" />
+      <Seo title={frontmatter.title} />
 
       <Flex
         height="full"
@@ -103,46 +118,46 @@ const ProjectsPage = () => {
             fontSize={{ base: "4xl", md: "4xl", lg: "5xl", xl: "6xl" }}
             textTransform="uppercase"
           >
-            Projects
+            {frontmatter.title}
           </Heading>
         </SlideFade>
         <Box marginBlock={2} height={[5, 10]} borderLeftWidth="5px"></Box>
-        <Grid
-          templateColumns={{
-            base: `repeat(1, 1fr)`,
-            sm: `repeat(1, 1fr)`,
-            md: `repeat(2, 1fr)`,
-            lg: `repeat(3, 1fr)`,
-            xl: `repeat(3, 1fr)`,
-          }}
-          gap={8}
-        >
-          <ProjectItem />
-          <ProjectItem />
-          <ProjectItem />
-          <ProjectItem />
-        </Grid>
+        <SlideFade in={true} offsetY={90}>
+          <Grid
+            alignItems="flex-start"
+            templateColumns={{
+              base: `repeat(1, 1fr)`,
+              sm: `repeat(1, 1fr)`,
+              md: `repeat(2, 1fr)`,
+              lg: `repeat(3, 1fr)`,
+              xl: `repeat(3, 1fr)`,
+            }}
+            gap={8}
+          >
+            {frontmatter.items.map(item => (
+              <ProjectItem item={item} key={item.title} />
+            ))}
+          </Grid>
+        </SlideFade>
       </Flex>
     </Layout>
   )
 }
 export default ProjectsPage
 
-export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
+export const projectsPageQuery = graphql`
+  query ProjectsPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
       frontmatter {
         templateKey
         title
-        image
-        name
-        position
-        location
-        tags
-        mainpitch {
+        items {
           title
           description
+          image
+          link
+          source
+          tags
         }
       }
     }

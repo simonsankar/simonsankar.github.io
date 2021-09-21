@@ -20,8 +20,8 @@ import { Button } from "@chakra-ui/react"
 import { kebabCase } from "lodash"
 
 const BlogList = ({ data, pageContext }) => {
-  const { currentPage, numPages } = pageContext
   const { allMarkdownRemark } = data
+  const { tag } = pageContext
   return (
     <Layout>
       <Seo title="Blog" />
@@ -41,7 +41,7 @@ const BlogList = ({ data, pageContext }) => {
               marginTop={[4, 8]}
               fontSize={{ base: "4xl", md: "4xl", lg: "5xl", xl: "6xl" }}
             >
-              BLOG
+              #{tag}
             </Heading>
           </SlideFade>
           <Box marginBlock="2" height={[5, 10]} borderLeftWidth="5px"></Box>
@@ -59,20 +59,6 @@ const BlogList = ({ data, pageContext }) => {
             </Stack>
           </SlideFade>
         </Flex>
-        <Flex direction="row" justifyContent="center" marginBlock={8}>
-          <Stack direction="row" spacing="4">
-            {currentPage - 1 >= 1 ? (
-              <Button as={GatsbyLink} to={`/blog/page/${currentPage - 1}`}>
-                Prev
-              </Button>
-            ) : null}
-            {currentPage + 1 <= numPages ? (
-              <Button as={GatsbyLink} to={`/blog/page/${currentPage + 1}`}>
-                Next
-              </Button>
-            ) : null}
-          </Stack>
-        </Flex>
       </Flex>
     </Layout>
   )
@@ -80,19 +66,17 @@ const BlogList = ({ data, pageContext }) => {
 export default BlogList
 
 export const query = graphql`
-  query AllBlogPosts($skip: Int!, $limit: Int!) {
+  query AllTaggedPosts($tag: String) {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-      limit: $limit
-      skip: $skip
+      filter: { frontmatter: { tags: { in: [$tag] } } }
+      limit: 1000
     ) {
       nodes {
         id
         fields {
           slug
         }
-        html
         frontmatter {
           title
           date(formatString: "DD/MM/YYYY")
