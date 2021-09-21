@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-blog-post-js",
     "path": "/blog/2021-09-17-my-first-blog/",
-    "result": {"data":{"markdownRemark":{"id":"797560f2-b9a1-5c7d-8c68-c61926713fa6","html":"<p>Some text</p>","frontmatter":{"date":"September 17, 2021","title":"My first blog","description":"nothing here","tags":["dev","code","gatsby"],"image":"/img/rubbersoul.jpg"}}},"pageContext":{"id":"797560f2-b9a1-5c7d-8c68-c61926713fa6"}},
+    "result": {"data":{"markdownRemark":{"id":"797560f2-b9a1-5c7d-8c68-c61926713fa6","rawMarkdownBody":"# Some text here\nmore text to read\n## Another title","frontmatter":{"date":"September 17, 2021","title":"My first blog","description":"Not much going on","tags":["dev","code","gatsby"],"image":"/img/rubbersoul.jpg"}}},"pageContext":{"id":"797560f2-b9a1-5c7d-8c68-c61926713fa6"}},
     "staticQueryHashes": ["3649515864","63159454"]}

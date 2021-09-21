@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-tags-page-js",
-    "path": "/tags/rock/",
-    "result": {"data":{"allMarkdownRemark":{"nodes":[{"id":"79607f59-21c4-5f3a-b43d-62f83dd291a2","fields":{"slug":"/blog/2021-09-17-another-one/"},"frontmatter":{"title":"Another one","date":"17/09/2021","description":"Bites the dust","image":"/img/afeveryoucantsweatout.jpg","tags":["PATD","Rock"]}}]}},"pageContext":{"tag":"Rock"}},
-    "staticQueryHashes": ["3649515864","63159454"]}

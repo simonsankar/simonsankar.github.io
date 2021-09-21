@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tags-page-js",
+    "path": "/tags/mrrobot/",
+    "result": {"data":{"allMarkdownRemark":{"nodes":[{"id":"736508c0-ea23-5335-b84d-944198fa08a9","fields":{"slug":"/blog/2021-09-20-wonderluist/"},"frontmatter":{"title":"Hackerman","date":"20/09/2021","description":"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic","image":"https://pbs.twimg.com/media/E5X6cQ-WYAIjf4N.jpg","tags":["hacking","mrrobot"]}}]}},"pageContext":{"tag":"mrrobot"}},
+    "staticQueryHashes": ["3649515864","63159454"]}

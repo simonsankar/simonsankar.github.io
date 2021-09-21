@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-tags-page-js",
-    "path": "/tags/qwerty/",
-    "result": {"data":{"allMarkdownRemark":{"nodes":[{"id":"dac51744-72f4-5032-add5-fd9391867395","fields":{"slug":"/blog/2021-09-20-coolios/"},"frontmatter":{"title":"Coolios","date":"20/09/2021","description":"adad ","image":"/img/rubbersoul.jpg","tags":["qwerty"]}}]}},"pageContext":{"tag":"qwerty"}},
-    "staticQueryHashes": ["3649515864","63159454"]}

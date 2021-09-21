@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-tags-page-js",
-    "path": "/tags/cool/",
-    "result": {"data":{"allMarkdownRemark":{"nodes":[{"id":"39795028-b713-5cad-aa4c-80ff9a02b3ae","fields":{"slug":"/blog/2021-09-20-ranking-up/"},"frontmatter":{"title":"Ranking up","date":"20/09/2021","description":"in valo","image":"/img/afeveryoucantsweatout.jpg","tags":["cool"]}},{"id":"b8cca445-97b7-5b16-9c2c-35458201bb7b","fields":{"slug":"/blog/2021-09-20-seventhy/"},"frontmatter":{"title":"Seventhy","date":"20/09/2021","description":"qweq\nasdad","image":"/img/rubbersoul.jpg","tags":["cool"]}}]}},"pageContext":{"tag":"cool"}},
-    "staticQueryHashes": ["3649515864","63159454"]}
