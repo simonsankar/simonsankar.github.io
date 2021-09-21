@@ -19,49 +19,6 @@ import Layout from "../components/layout"
 import React from "react"
 import Seo from "../components/seo"
 
-const ProjectsPage = () => {
-  return (
-    <Layout>
-      <Seo title="Projects" />
-
-      <Flex
-        height="full"
-        width="full"
-        style={{ minHeight: `calc(100vh - 105px)` }}
-        paddingInline={[8, 8, 8, 8, "15%", "20%"]}
-        direction="column"
-      >
-        <SlideFade in={true} offsetX={-90}>
-          <Heading
-            marginTop={[4, 8]}
-            fontSize={{ base: "4xl", md: "4xl", lg: "5xl", xl: "6xl" }}
-            textTransform="uppercase"
-          >
-            Projects
-          </Heading>
-        </SlideFade>
-        <Box marginBlock={2} height={[5, 10]} borderLeftWidth="5px"></Box>
-        <Grid
-          templateColumns={{
-            base: `repeat(1, 1fr)`,
-            sm: `repeat(1, 1fr)`,
-            md: `repeat(2, 1fr)`,
-            lg: `repeat(3, 1fr)`,
-            xl: `repeat(3, 1fr)`,
-          }}
-          gap={8}
-        >
-          <ProjectItem />
-          <ProjectItem />
-          <ProjectItem />
-          <ProjectItem />
-        </Grid>
-      </Flex>
-    </Layout>
-  )
-}
-export default ProjectsPage
-
 const ProjectItem = () => {
   return (
     <Center py={6}>
@@ -127,3 +84,67 @@ const ProjectItem = () => {
     </Center>
   )
 }
+
+const ProjectsPage = () => {
+  return (
+    <Layout>
+      <Seo title="Projects" />
+
+      <Flex
+        height="full"
+        width="full"
+        style={{ minHeight: `calc(100vh - 105px)` }}
+        paddingInline={[8, 8, 8, 8, "15%", "20%"]}
+        direction="column"
+      >
+        <SlideFade in={true} offsetX={-90}>
+          <Heading
+            marginTop={[4, 8]}
+            fontSize={{ base: "4xl", md: "4xl", lg: "5xl", xl: "6xl" }}
+            textTransform="uppercase"
+          >
+            Projects
+          </Heading>
+        </SlideFade>
+        <Box marginBlock={2} height={[5, 10]} borderLeftWidth="5px"></Box>
+        <Grid
+          templateColumns={{
+            base: `repeat(1, 1fr)`,
+            sm: `repeat(1, 1fr)`,
+            md: `repeat(2, 1fr)`,
+            lg: `repeat(3, 1fr)`,
+            xl: `repeat(3, 1fr)`,
+          }}
+          gap={8}
+        >
+          <ProjectItem />
+          <ProjectItem />
+          <ProjectItem />
+          <ProjectItem />
+        </Grid>
+      </Flex>
+    </Layout>
+  )
+}
+export default ProjectsPage
+
+export const aboutPageQuery = graphql`
+  query AboutPage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      html
+      frontmatter {
+        templateKey
+        title
+        image
+        name
+        position
+        location
+        tags
+        mainpitch {
+          title
+          description
+        }
+      }
+    }
+  }
+`
