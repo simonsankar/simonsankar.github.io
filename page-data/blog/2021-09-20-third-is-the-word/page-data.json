@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-blog-post-js",
     "path": "/blog/2021-09-20-third-is-the-word/",
-    "result": {"data":{"markdownRemark":{"id":"1de9cd86-7355-59da-86b9-14dd246b665b","html":"<p>asdasdad</p>","frontmatter":{"date":"September 20, 2021","title":"Third is the word","description":"asdadad","tags":["PATD"]}}},"pageContext":{"id":"1de9cd86-7355-59da-86b9-14dd246b665b"}},
+    "result": {"data":{"markdownRemark":{"id":"1de9cd86-7355-59da-86b9-14dd246b665b","html":"<p>asdasdad</p>","frontmatter":{"date":"September 20, 2021","title":"Third is the word","description":"asdadad","tags":["PATD"],"image":"/img/afeveryoucantsweatout.jpg"}}},"pageContext":{"id":"1de9cd86-7355-59da-86b9-14dd246b665b"}},
     "staticQueryHashes": ["3649515864","63159454"]}

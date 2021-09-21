@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-blog-post-js",
     "path": "/blog/2021-09-20-ranking-up/",
-    "result": {"data":{"markdownRemark":{"id":"39795028-b713-5cad-aa4c-80ff9a02b3ae","html":"<h1>hwoooo</h1>","frontmatter":{"date":"September 20, 2021","title":"Ranking up","description":"in valo","tags":["cool"]}}},"pageContext":{"id":"39795028-b713-5cad-aa4c-80ff9a02b3ae"}},
+    "result": {"data":{"markdownRemark":{"id":"39795028-b713-5cad-aa4c-80ff9a02b3ae","html":"<h1>hwoooo</h1>","frontmatter":{"date":"September 20, 2021","title":"Ranking up","description":"in valo","tags":["cool"],"image":"/img/afeveryoucantsweatout.jpg"}}},"pageContext":{"id":"39795028-b713-5cad-aa4c-80ff9a02b3ae"}},
     "staticQueryHashes": ["3649515864","63159454"]}

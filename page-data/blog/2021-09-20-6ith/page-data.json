@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-blog-post-js",
     "path": "/blog/2021-09-20-6ith/",
-    "result": {"data":{"markdownRemark":{"id":"f76212cf-eaf8-5d70-8885-6cbdd26460af","html":"<p>dasgh fgh ujrthr</p>","frontmatter":{"date":"September 20, 2021","title":"6ith","description":"hgjk hg fhgfdhg f","tags":["asdfg"]}}},"pageContext":{"id":"f76212cf-eaf8-5d70-8885-6cbdd26460af"}},
+    "result": {"data":{"markdownRemark":{"id":"f76212cf-eaf8-5d70-8885-6cbdd26460af","html":"<p>dasgh fgh ujrthr</p>","frontmatter":{"date":"September 20, 2021","title":"6ith","description":"hgjk hg fhgfdhg f","tags":["asdfg"],"image":"/img/rubbersoul.jpg"}}},"pageContext":{"id":"f76212cf-eaf8-5d70-8885-6cbdd26460af"}},
     "staticQueryHashes": ["3649515864","63159454"]}
