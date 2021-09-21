@@ -11,26 +11,11 @@ image: https://images.unsplash.com/photo-1606166325683-e6deb697d301?ixid=MnwxMjA
 tags:
   - PATD
 ---
-# stupidly-simple-blog [![npm version](https://badge.fury.io/js/stupidly-simple-blog.svg)](https://badge.fury.io/js/stupidly-simple-blog)
-A really simple flat file blog thing
-![Sample](https://cloud.githubusercontent.com/assets/175278/22441507/9525f26c-e72f-11e6-877e-67b83101c1a7.gif)
-## Another markdown blog project!?
-I wanted to write a blog post, so naturally had to make something that'd turn markdown into html. Some requirements were:
-* Watch mode
-* Compiled code blocks
-* No runtime scripts necessary
-* Themeable
-* Templates
-## Usage
-```
-  $ <filename>
-  Options
-    --template, -t  The template file to use (must be handlebars)
-    --watch, -w  Watch files for changes
-    --stdout, -s  Output the html to stdout
-    --output, -o  The .html file name (will be written to if stdout not specified)
-    --title, -t  The title for the html file (filename used instead)
-  Example
-    $ simple-blog my-amazing-post.md
-    $ simple-blog --watch --template main.mustache my-amazing-post.md
-```
+# Markdown Test File
+**See the raw source of [TEST.md](https://raw.githubusercontent.com/mxstbr/markdown-test-file/master/TEST.md) for the deets!** ([this is the test file rendered](./TEST.md))
+This repo contains a markdown file which covers a lot of the syntax. We use it for testing our markdown support.
+## Inspiration
+The file is based on [the source of John Gruber's Markdown Syntax page](https://daringfireball.net/projects/markdown/syntax.text) ([this is the page rendered](https://daringfireball.net/projects/markdown/syntax)) with all the HTML and some more complex stuff removed. (if you want to support the full entirety of Markdown we'd recommend just using the full page instead of this shortened version)
+Full credits for that idea go to [this StackOverflow question](https://stackoverflow.com/questions/2238012/need-a-sufficiently-long-complex-markdown-document-for-performance-testing).
+## License
+This repo is licensed under the MIT License, Copyright © 2017 Space Program Inc.
