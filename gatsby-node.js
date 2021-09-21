@@ -1,8 +1,10 @@
 const _ = require("lodash")
 const path = require("path")
 const { createFilePath } = require("gatsby-source-filesystem")
+
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
+
   return graphql(`
     {
       allMarkdownRemark(limit: 1000) {
@@ -36,7 +38,7 @@ exports.createPages = ({ actions, graphql }) => {
     // Blog list page
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
-        path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+        path: i === 0 ? `/blog/page/1` : `/blog/page/${i + 1}`,
         component: path.resolve(`src/templates/blog-list.js`),
         context: {
           limit,
@@ -85,6 +87,7 @@ exports.createPages = ({ actions, graphql }) => {
     })
   })
 }
+
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
