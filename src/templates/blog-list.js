@@ -9,6 +9,7 @@ import {
   Text,
   Link,
   Image,
+  ScaleFade,
   useColorModeValue,
 } from "@chakra-ui/react"
 import { graphql, Link as GatsbyLink } from "gatsby"
@@ -34,24 +35,28 @@ const BlogList = ({ data, pageContext }) => {
         justifyContent="space-between"
       >
         <Flex direction="column">
-          <Heading
-            marginTop={[4, 8]}
-            fontSize={{ base: "4xl", md: "4xl", lg: "5xl", xl: "6xl" }}
-          >
-            BLOG{" "}
-          </Heading>
+          <ScaleFade in={true} offsetX={-90}>
+            <Heading
+              marginTop={[4, 8]}
+              fontSize={{ base: "4xl", md: "4xl", lg: "5xl", xl: "6xl" }}
+            >
+              BLOG
+            </Heading>
+          </ScaleFade>
           <Box marginBlock="2" height={[5, 10]} borderLeftWidth="5px"></Box>
-          <Stack
-            divider={
-              <StackDivider
-                borderColor={useColorModeValue("gray.100", "gray.500")}
-              />
-            }
-          >
-            {allMarkdownRemark.nodes.map(node => (
-              <BlogItem post={node} />
-            ))}
-          </Stack>
+          <ScaleFade in={true} offsetY={-90}>
+            <Stack
+              divider={
+                <StackDivider
+                  borderColor={useColorModeValue("gray.100", "gray.500")}
+                />
+              }
+            >
+              {allMarkdownRemark.nodes.map(node => (
+                <BlogItem post={node} />
+              ))}
+            </Stack>
+          </ScaleFade>
         </Flex>
         <Flex direction="row" justifyContent="center" marginBlock={8}>
           <Stack direction="row" spacing="4">
@@ -108,7 +113,7 @@ const BlogTags = props => {
             to={`/tags/${tag}`}
             size={"md"}
             variant="solid"
-            colorScheme="brand"
+            colorScheme="gray"
             key={tag}
           >
             {tag}
@@ -169,8 +174,18 @@ export const BlogItem = ({ post }) => {
           color={useColorModeValue("gray.700", "gray.200")}
           fontSize={{ base: "sm", md: "md", lg: "lg", xl: "lg" }}
         >
-          {post.frontmatter.description}
+          {post.frontmatter.description}{" "}
+          <Button
+            size="sm"
+            colorScheme="brand"
+            variant="solid"
+            as={GatsbyLink}
+            to={post.fields.slug}
+          >
+            Read ⟶
+          </Button>
         </Text>
+        <Box marginBlock="1" height={[3, 7]} borderLeftWidth="3px"></Box>
         <Text>{post.frontmatter.date}</Text>
       </Box>
     </Flex>
