@@ -41,7 +41,11 @@ const IndexPage = () => (
           justify="space-between"
         >
           <SlideFade in={true} offsetX={-90}>
-            <Stack direction={["row", "column"]} spacing="4" marginTop={[8, 0]}>
+            <Stack
+              direction={["row", "column"]}
+              spacing="4"
+              marginBlock={[8, 0]}
+            >
               <IconButton
                 as={"a"}
                 aria-label="email"
