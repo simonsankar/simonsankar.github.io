@@ -9,7 +9,7 @@ position: Frontend Developer
 location: D'Abadie, Trinidad and Tobago
 mainpitch:
   title: My Career So Far
-  description: fun stuff
+  description: Need to write something compelling here.
 Position: Frontend Developer
 tags:
   - HTML/CSS
