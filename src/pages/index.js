@@ -149,7 +149,7 @@ const IndexPage = () => (
               src="../images/avatar.jpeg"
               quality={95}
               formats={["auto", "webp", "avif"]}
-              alt="A Gatsby astronaut"
+              alt="Simon Sankar"
             />
           </Box>
         </SlideFade>

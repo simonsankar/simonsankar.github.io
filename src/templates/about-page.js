@@ -5,10 +5,17 @@ import {
   Text,
   Box,
   Tag,
+  Link,
+  Button,
+  Divider,
+  Stack,
+  IconButton,
   useColorModeValue,
 } from "@chakra-ui/react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+import { EmailIcon, PhoneIcon } from "@chakra-ui/icons"
 
 import React from "react"
 import { graphql } from "gatsby"
@@ -42,7 +49,7 @@ function AboutPage({ data }) {
           </SlideFade>
           <Box marginBlock={2} height={[5, 10]} borderLeftWidth="5px"></Box>
           <Flex flex={1} direction={["column", "row"]}>
-            <Flex flexDirection="column">
+            <Flex flex={2} flexDirection="column">
               <SlideFade in={true} offsetY={90}>
                 <Text
                   marginTop={-0.5}
@@ -69,7 +76,7 @@ function AboutPage({ data }) {
                 <Text>{frontmatter.mainpitch.description}</Text>
               </SlideFade>
             </Flex>
-            <Flex flex={1} direction="column" paddingLeft={[0, 8]}>
+            <Flex flex={1} direction="column">
               <SlideFade in={true} offsetX={90}>
                 <Heading fontSize="3xl" marginBottom={4}>
                   Technologies
@@ -90,6 +97,53 @@ function AboutPage({ data }) {
                     )
                   })}
                 </Box>
+                <Divider marginBlock={4} />
+                <Button
+                  as={Link}
+                  href="https://docs.google.com/document/d/1qA5lSskEknnegBoC3FRVeK4KRCb9rsAuDetArvRg7rM/edit?usp=sharing"
+                  target="_blank"
+                  alt="Resume"
+                  variant="solid"
+                  colorScheme="brand"
+                  width="100%"
+                >
+                  RESUME
+                </Button>
+                <Divider marginBlock={4} />
+
+                <Heading fontSize="3xl" marginBottom={4}>
+                  Socials
+                </Heading>
+                <Stack direction="row" spacing="4" marginBottom={8}>
+                  <IconButton
+                    as={"a"}
+                    aria-label="email"
+                    icon={<EmailIcon boxSize={7} />}
+                    href="mailto:sjsankar10@gmail.com"
+                    target="_blank"
+                  />
+                  <IconButton
+                    as={"a"}
+                    aria-label="phone"
+                    icon={<PhoneIcon boxSize={7} />}
+                    href="tel:+18687304432"
+                    target="_blank"
+                  />
+                  <IconButton
+                    as={"a"}
+                    aria-label="github"
+                    href="https://github.com/simonsankar"
+                    target="_blank"
+                    icon={<FontAwesomeIcon size="2x" icon={faGithub} />}
+                  />
+                  <IconButton
+                    as={"a"}
+                    aria-label="linkedin"
+                    href="https://www.linkedin.com/in/simon-sankar-5a82a2215/"
+                    target="_blank"
+                    icon={<FontAwesomeIcon size="2x" icon={faLinkedin} />}
+                  />
+                </Stack>
               </SlideFade>
             </Flex>
           </Flex>

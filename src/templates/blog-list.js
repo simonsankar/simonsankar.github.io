@@ -53,7 +53,7 @@ const BlogList = ({ data, pageContext }) => {
               }
             >
               {allMarkdownRemark.nodes.map(node => (
-                <BlogItem post={node} />
+                <BlogItem key={node.id} post={node} />
               ))}
             </Stack>
           </SlideFade>
@@ -87,6 +87,7 @@ export const query = graphql`
       skip: $skip
     ) {
       nodes {
+        id
         fields {
           slug
         }
@@ -114,7 +115,7 @@ const BlogTags = props => {
             size={"md"}
             variant="solid"
             colorScheme="gray"
-            key={tag}
+            key={props.id + tag}
           >
             {tag}
           </Tag>
@@ -125,7 +126,6 @@ const BlogTags = props => {
 }
 
 export const BlogItem = ({ post }) => {
-  console.log(post)
   return (
     <Flex
       display="flex"
@@ -162,7 +162,7 @@ export const BlogItem = ({ post }) => {
         paddingBlock={[4, 8]}
         paddingInline={[0, 8]}
       >
-        <BlogTags tags={post.frontmatter.tags} />
+        <BlogTags id={post.id} tags={post.frontmatter.tags} />
         <Heading marginTop="1">
           <Link as={GatsbyLink} to={post.fields.slug}>
             {post.frontmatter.title}
