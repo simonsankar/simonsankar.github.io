@@ -40,8 +40,9 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
+          - { label: Name, name: name, widget: string }
+          - { label: Position, name: position, widget: string }
+          - { label: Location, name: location, widget: string }
           - {
               label: Mainpitch,
               name: mainpitch,
@@ -52,3 +53,4 @@ collections:
                   { label: Description, name: description, widget: text },
                 ],
             }
+          - { label: "Tags", name: "tags", widget: "list" }

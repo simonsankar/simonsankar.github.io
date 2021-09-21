@@ -97,6 +97,7 @@ const IndexPage = () => (
                 >
                   Simon Sankar
                   <Text
+                    as="span"
                     fontSize={{ base: "4xl", md: "6xl", lg: "7xl", xl: "7xl" }}
                     display="inline"
                     fontWeight="medium"
@@ -111,7 +112,7 @@ const IndexPage = () => (
                 fontFamily="Faustina"
                 fontSize={{ base: "xl", md: "2xl", lg: "3xl", xl: "5xl" }}
               >
-                a Front-End developer who loves building apps!
+                a Frontend Developer who loves building apps!
               </Text>
               <Box
                 marginBlock="2"

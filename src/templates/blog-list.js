@@ -9,7 +9,7 @@ import {
   Text,
   Link,
   Image,
-  ScaleFade,
+  SlideFade,
   useColorModeValue,
 } from "@chakra-ui/react"
 import { graphql, Link as GatsbyLink } from "gatsby"
@@ -35,16 +35,16 @@ const BlogList = ({ data, pageContext }) => {
         justifyContent="space-between"
       >
         <Flex direction="column">
-          <ScaleFade in={true} offsetX={-90}>
+          <SlideFade in={true} offsetX={-90}>
             <Heading
               marginTop={[4, 8]}
               fontSize={{ base: "4xl", md: "4xl", lg: "5xl", xl: "6xl" }}
             >
               BLOG
             </Heading>
-          </ScaleFade>
+          </SlideFade>
           <Box marginBlock="2" height={[5, 10]} borderLeftWidth="5px"></Box>
-          <ScaleFade in={true} offsetY={-90}>
+          <SlideFade in={true} offsetY={-90}>
             <Stack
               divider={
                 <StackDivider
@@ -56,7 +56,7 @@ const BlogList = ({ data, pageContext }) => {
                 <BlogItem post={node} />
               ))}
             </Stack>
-          </ScaleFade>
+          </SlideFade>
         </Flex>
         <Flex direction="row" justifyContent="center" marginBlock={8}>
           <Stack direction="row" spacing="4">
