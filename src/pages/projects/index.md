@@ -22,7 +22,7 @@ items:
     link: https://simonsankar.github.io/
     tags:
       - reactjs
-      - gatsby
+      - gatsbyjs
       - netlifycms
       - chakraui
 ---
