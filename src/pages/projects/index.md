@@ -12,7 +12,7 @@ items:
       - strapi
       - antd
       - less
-    source: " "
+    source: ""
   - title: Personal Site
     description: Finally got my act in order and made my own site.
     image: /img/simonsankar.png
