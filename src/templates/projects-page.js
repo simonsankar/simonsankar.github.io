@@ -36,10 +36,12 @@ const ProjectItem = ({ item }) => {
         <Image src={item.image} layout={"fill"} />
       </Box>
       <Stack>
-        <HStack spacing={2}>
+        <Box>
           {item.tags.map(tag => {
             return (
               <Tag
+                marginRight={2}
+                marginBottom={2}
                 size={"sm"}
                 variant="subtle"
                 colorScheme="gray"
@@ -49,7 +51,7 @@ const ProjectItem = ({ item }) => {
               </Tag>
             )
           })}
-        </HStack>
+        </Box>
         <Heading
           color={useColorModeValue("gray.700", "gray.50")}
           fontSize={"2xl"}

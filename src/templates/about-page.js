@@ -65,7 +65,11 @@ function AboutPage({ data }) {
                 <Text fontSize={{ base: "xl", md: "xl", lg: "2xl", xl: "3xl" }}>
                   {frontmatter.position}
                 </Text>
-                <Text fontWeight="bold" marginTop={5}>
+                <Text
+                  color={useColorModeValue("gray.600", "gray.200")}
+                  fontWeight="bold"
+                  marginTop={5}
+                >
                   <FontAwesomeIcon icon={faMapMarkerAlt} />{" "}
                   {frontmatter.location}
                 </Text>
