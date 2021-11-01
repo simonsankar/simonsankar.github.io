@@ -7,7 +7,7 @@ description: is simply dummy text of the printing and typesetting industry.
   when an unknown printer took a galley of type and scrambled it to make a type
   specimen book. It has survived not only five centuries, but also the leap into
   electronic
-image: https://pbs.twimg.com/media/E5X6cQ-WYAIjf4N.jpg
+image: https://upload.wikimedia.org/wikipedia/en/1/10/Black_Sabbath_Sabotage.jpg
 tags:
   - hacking
   - mrrobot
