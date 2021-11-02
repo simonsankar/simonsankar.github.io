@@ -33,6 +33,7 @@ import Logo from "./logo"
 import React from "react"
 
 export default function LargeWithLogoLeft() {
+  const wonka = "qwerty"
   return (
     <Box
       bg={useColorModeValue("gray.200", "gray.800")}
@@ -47,4 +48,65 @@ export default function LargeWithLogoLeft() {
     </Box>
   )
 }
+```
+
+```go
+// +build server
+
+package main
+
+import (
+	"flag"
+
+	sellwithwe "github.com/wepala/sellwithwe-api/src"
+)
+
+var port = flag.String("port", "8682", "-port=8682")
+
+func main() {
+	flag.Parse()
+	sellwithwe.New(port, "./api.yaml", nil)
+}
+
+```
+
+```typescript
+const customer: FastifyPluginAsync = async (fastify, opts): Promise<void> => {
+  // Create Customer
+  const createCustomerOptions: RouteShorthandOptions = {
+    schema: CreateCustomerSchema,
+  };
+  fastify.post<ICreateCustomerRequest>(
+    "",
+    createCustomerOptions,
+    async (request, reply) => {
+      const { name, phones = [], emails = [], tags = [] } = request.body;
+      request.log.info("Creating a new customer", name);
+
+      if (name.length < 3)
+        reply.status(400).send({
+          message: "Name should be at least 3 characters in length",
+        });
+      const customer = await fastify.prisma.customer.create({
+        data: {
+          name,
+          phones: {
+            createMany: {
+              data: phones,
+            },
+          },
+          emails: {
+            createMany: {
+              data: emails,
+            },
+          },
+          tags: {
+            set: tags,
+          },
+        },
+      });
+      if (customer) reply.status(201).send({ id: customer.id });
+    }
+  );
+
 ```
