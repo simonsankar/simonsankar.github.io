@@ -37,4 +37,15 @@ items:
       - electronjs
       - antd
       - less
+  - title: Customer Relationship Management API
+    description: A RESTful API
+    image: /img/crm-api.png
+    link: https://crm-api-fastify.herokuapp.com/docs/static/index.html
+    source: https://github.com/simonsankar/crm-api
+    tags:
+      - nodejs
+      - typescript
+      - fastify
+      - prisma
+      - swagger
 ---
