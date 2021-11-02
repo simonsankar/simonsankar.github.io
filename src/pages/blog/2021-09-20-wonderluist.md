@@ -17,31 +17,42 @@ tags:
 This repo contains a markdown file which covers a lot of the syntax. We use it for testing our markdown support.
 ## Inspiration
 ```javascript
-var Markdown = window.reactMarkdown
-var markdown = `
-# Code test
+import ReactDom from 'react-dom'
+import ReactMarkdown from 'react-markdown'
+import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
+import {dark} from 'react-syntax-highlighter/dist/esm/styles/prism'
 
-Here's that code block:
+// Did you know you can use tildes instead of backticks for code in markdown? ✨
+const markdown = `Here is some JavaScript code:
 
-\`\`\`javascript
-var total = [1, 2, 3, 4, 5]
-  .map(num => num * 3)
-  .filter(num => num < 9)
-  .reduce((sum, num) => sum += num, 0)
- 
-\`\`\`
+~~~js
+console.log('It works!')
+~~~
+`
 
-Neat, eh?`
-
-
-ReactDOM.render(
-  <Markdown source={markdown} />,
-  document.getElementById('root'),
-  function loadPrism() {
-    var scr = document.createElement('script')
-    scr.src = 'https://unpkg.com/prismjs@1.6.0/prism.js'
-    document.head.appendChild(scr)
-  }
+ReactDom.render(
+  <ReactMarkdown
+    children={markdown}
+    components={{
+      code({node, inline, className, children, ...props}) {
+        const match = /language-(\w+)/.exec(className || '')
+        return !inline && match ? (
+          <SyntaxHighlighter
+            children={String(children).replace(/\n$/, '')}
+            style={dark}
+            language={match[1]}
+            PreTag="div"
+            {...props}
+          />
+        ) : (
+          <code className={className} {...props}>
+            {children}
+          </code>
+        )
+      }
+    }}
+  />,
+  document.body
 )
 ```
 
