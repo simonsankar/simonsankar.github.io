@@ -8,7 +8,6 @@ import {
   Stack,
   Box,
   Image,
-  Center,
   Button,
   Link,
   Divider,

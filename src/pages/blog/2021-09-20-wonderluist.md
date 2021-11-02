@@ -12,47 +12,39 @@ tags:
   - hacking
   - mrrobot
 ---
+
 # Markdown Test File
+
 **See the raw source of [TEST.md](https://raw.githubusercontent.com/mxstbr/markdown-test-file/master/TEST.md) for the deets!** ([this is the test file rendered](./TEST.md))
 This repo contains a markdown file which covers a lot of the syntax. We use it for testing our markdown support.
+
 ## Inspiration
+
 ```jsx
-import ReactDom from 'react-dom'
-import ReactMarkdown from 'react-markdown'
-import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
-import {dark} from 'react-syntax-highlighter/dist/esm/styles/prism'
+import {
+  Box,
+  Container,
+  Stack,
+  Text,
+  useColorModeValue,
+} from "@chakra-ui/react"
 
-// Did you know you can use tildes instead of backticks for code in markdown? ✨
-const markdown = `Here is some JavaScript code:
+import Logo from "./logo"
+import React from "react"
 
-~~~js
-console.log('It works!')
-~~~
-`
-
-ReactDom.render(
-  <ReactMarkdown
-    children={markdown}
-    components={{
-      code({node, inline, className, children, ...props}) {
-        const match = /language-(\w+)/.exec(className || '')
-        return !inline && match ? (
-          <SyntaxHighlighter
-            children={String(children).replace(/\n$/, '')}
-            style={dark}
-            language={match[1]}
-            PreTag="div"
-            {...props}
-          />
-        ) : (
-          <code className={className} {...props}>
-            {children}
-          </code>
-        )
-      }
-    }}
-  />,
-  document.body
-)
+export default function LargeWithLogoLeft() {
+  return (
+    <Box
+      bg={useColorModeValue("gray.200", "gray.800")}
+      color={useColorModeValue("gray.800", "gray.200")}
+    >
+      <Container as={Stack} maxW={"6xl"} py={10}>
+        <Stack spacing={0} align="center">
+          <Logo />
+          <Text fontSize={"sm"}>© 2021 Simon Sankar</Text>
+        </Stack>
+      </Container>
+    </Box>
+  )
+}
 ```
-

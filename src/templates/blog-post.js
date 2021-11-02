@@ -1,15 +1,17 @@
-import React, { useEffect } from "react"
-import { Heading, Flex, Image, Box, Divider } from "@chakra-ui/react"
+import React from "react"
 import { graphql } from "gatsby"
+import ReactMarkdown from "react-markdown"
+
+import { Heading, Flex, Image, Box, Divider } from "@chakra-ui/react"
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
+import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism"
+
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import ChakraUIRenderer from "chakra-ui-markdown-renderer"
-import ReactMarkdown from "react-markdown"
-import PrismJS from "prismjs"
-import "prismjs/components/prism-jsx"
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
+
   return (
     <Layout>
       <Flex
@@ -50,8 +52,27 @@ const BlogPost = ({ data }) => {
           </Box>
           <Divider marginBlock="4" />
           <ReactMarkdown
-            components={ChakraUIRenderer()}
+            // components={ChakraUIRenderer()}
+            components={{
+              code({ node, inline, className, children, ...props }) {
+                const match = /language-(\w+)/.exec(className || "")
+                return !inline && match ? (
+                  <SyntaxHighlighter
+                    children={String(children).replace(/\n$/, "")}
+                    style={materialDark}
+                    language={match[1]}
+                    PreTag="div"
+                    {...props}
+                  />
+                ) : (
+                  <code className={className} {...props}>
+                    {children}
+                  </code>
+                )
+              },
+            }}
             children={post.rawMarkdownBody}
+            escapeHtml={false}
           />
         </Flex>
       </Flex>
