@@ -105,7 +105,7 @@ export const query = graphql`
   }
 `
 
-const BlogTags = props => {
+export const BlogTags = props => {
   return (
     <HStack spacing={2} marginTop={props.marginTop}>
       {props.tags.map(tag => {
@@ -115,7 +115,7 @@ const BlogTags = props => {
             to={`/tags/${kebabCase(tag)}`}
             size={"md"}
             variant="solid"
-            colorScheme="gray"
+            colorScheme={props.colorScheme ? props.colorScheme : "gray"}
             key={props.id + tag}
           >
             {tag}
