@@ -1,4 +1,5 @@
 code.chakra-code > div {
-  border-radius: var(--chakra-radii-md);
-  box-shadow: var(--chakra-shadows-xl);
+  background-color: transparent !important;
+  border-radius: var(--chakra-radii-md) !important;
+  box-shadow: var(--chakra-shadows-xl) !important;
 }
