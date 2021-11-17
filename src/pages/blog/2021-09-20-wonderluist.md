@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Hackerman
+title: Sabotage - 1975 (Heavy Blues, Hard Rock)
 date: 2021-09-20T21:43:00.952Z
 description: is simply dummy text of the printing and typesetting industry.
   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
