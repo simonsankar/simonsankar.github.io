@@ -49,4 +49,20 @@ items:
       - fastify
       - prisma
       - swagger
+  - title: CRM App
+    description: |-
+      A web app for making use of the CRM API that was developed.
+      Uses nextjs and typescript, styled with antd components.
+      Testing should be done with jest + cypress.
+      [WIP]
+    image: /img/crm.png
+    source: https://github.com/simonsankar/crm-app
+    link: https://crm-app-demo.vercel.app/
+    tags:
+      - typescript
+      - reactjs
+      - nextjs
+      - antd
+      - jest
+      - cypress
 ---
