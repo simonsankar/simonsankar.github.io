@@ -25,18 +25,6 @@ items:
       - gatsbyjs
       - netlifycms
       - chakraui
-  - title: an_me
-    description: >-
-      An anime streaming desktop app built with electron and react.
-
-      Unfortunately, the site that was being scrapped is now defunct, so an_me had an early EOL.
-    image: /img/an_me.png
-    source: https://github.com/simonsankar/an_me
-    tags:
-      - reactjs
-      - electronjs
-      - antd
-      - less
   - title: CRM API
     description: A RESTful API for a Customer Relationship Management system using
       fastify + prisma. My first attempt at a proper backend system.
@@ -65,4 +53,16 @@ items:
       - antd
       - jest
       - cypress
+  - title: an_me
+    description: >-
+      An anime streaming desktop app built with electron and react.
+
+      Unfortunately, the site that was being scrapped is now defunct, so an_me had an early EOL.
+    image: /img/an_me.png
+    source: https://github.com/simonsankar/an_me
+    tags:
+      - reactjs
+      - electronjs
+      - antd
+      - less
 ---
