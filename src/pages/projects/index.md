@@ -29,7 +29,7 @@ items:
     description: >-
       An anime streaming desktop app built with electron and react.
 
-      Sadly the site that was being scrapped is now defunct, but I had a fun time working on with and even streamed Attack on Titan ad free!
+      Unfortunately, the site that was being scrapped is now defunct, so an_me had an early EOL.
     image: /img/an_me.png
     source: https://github.com/simonsankar/an_me
     tags:
