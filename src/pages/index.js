@@ -86,14 +86,14 @@ const IndexPage = () => (
               </Text>
               <span>
                 <Text
-                  fontSize={{ base: "4xl", md: "6xl", lg: "7xl", xl: "7xl" }}
+                  fontSize={{ base: "3xl", md: "6xl", lg: "7xl", xl: "7xl" }}
                   display="inline"
                   marginRight={2}
                 >
                   I am
                 </Text>
                 <Text
-                  fontSize={{ base: "4xl", md: "6xl", lg: "7xl", xl: "7xl" }}
+                  fontSize={{ base: "3xl", md: "6xl", lg: "7xl", xl: "7xl" }}
                   fontWeight="bold"
                   color={useColorModeValue("brand.400", "brand.300")}
                   display="inline-block"
@@ -102,7 +102,7 @@ const IndexPage = () => (
                   Simon Sankar
                   <Text
                     as="span"
-                    fontSize={{ base: "4xl", md: "6xl", lg: "7xl", xl: "7xl" }}
+                    fontSize={{ base: "3xl", md: "6xl", lg: "7xl", xl: "7xl" }}
                     display="inline"
                     fontWeight="medium"
                     color={useColorModeValue("gray.700", "gray.100")}
@@ -146,9 +146,13 @@ const IndexPage = () => (
         </Flex>
       </Flex>
 
-      <Flex align="center" justify="center" flex={1}>
+      <Flex align="center" justify="center" flex={1} paddingBlock="4">
         <SlideFade in={true} offsetX={90}>
-          <Box border="5px solid" borderBottomWidth="40px">
+          <Box
+            border="5px solid"
+            borderBottomWidth={["20px", "40px"]}
+            w={[120, "auto"]}
+          >
             <StaticImage
               src="../images/avatar.jpeg"
               quality={95}
