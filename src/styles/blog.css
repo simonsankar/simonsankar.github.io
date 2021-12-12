@@ -21,3 +21,7 @@ body::-webkit-scrollbar-thumb {
   transition: color 0.2s ease;
   border-radius: 8px;
 }
+
+body {
+  overflow-x: hidden;
+}
