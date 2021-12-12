@@ -142,12 +142,13 @@ export const BlogItem = ({ post }) => {
           _hover={{ textDecoration: "none" }}
         >
           <Image
+            textAlign={"center"}
             transform="scale(1.0)"
             borderRadius="md"
             src={post.frontmatter.image}
             alt={post.frontmatter.title}
             objectFit="contain"
-            width="100%"
+            width={["0%", "100%"]}
             transition="0.3s ease-in-out"
             _hover={{
               transform: "scale(1.05)",
