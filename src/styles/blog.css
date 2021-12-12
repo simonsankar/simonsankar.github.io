@@ -5,3 +5,19 @@ code.chakra-code > div {
 code.chakra-code {
   background-color: transparent !important;
 }
+
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 8px;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--chakra-colors-brand-300);
+  transition: color 0.2s ease;
+  border-radius: 8px;
+}

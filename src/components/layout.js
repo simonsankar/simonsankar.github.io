@@ -1,14 +1,7 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
+import * as React from "react"
+import { useColorModeValue } from "@chakra-ui/react"
 import "@fontsource/faustina/400.css"
 import "@fontsource/poppins/400.css"
-
-import * as React from "react"
 
 import { graphql, useStaticQuery } from "gatsby"
 
@@ -30,9 +23,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-
       {children}
-      <Footer></Footer>
+      <Footer />
     </>
   )
 }
