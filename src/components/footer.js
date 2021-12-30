@@ -18,7 +18,7 @@ export default function LargeWithLogoLeft() {
       <Container as={Stack} maxW={"6xl"} py={10}>
         <Stack spacing={0} align="center">
           <Logo />
-          <Text fontSize={"sm"}>Made with 🗲 by Simon Sankar</Text>
+          <Text fontSize={"sm"}>Made with &#128498; by Simon Sankar</Text>
           <Text fontSize={"sm"}>© 2021</Text>
         </Stack>
       </Container>
