@@ -50,26 +50,6 @@ export default function LargeWithLogoLeft() {
 }
 ```
 
-```go
-// +build server
-
-package main
-
-import (
-	"flag"
-
-	sellwithwe "github.com/wepala/sellwithwe-api/src"
-)
-
-var port = flag.String("port", "8682", "-port=8682")
-
-func main() {
-	flag.Parse()
-	sellwithwe.New(port, "./api.yaml", nil)
-}
-
-```
-
 ```typescript
 const customer: FastifyPluginAsync = async (fastify, opts): Promise<void> => {
   // Create Customer
