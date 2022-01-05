@@ -3,9 +3,7 @@ templateKey: projects-page
 title: Projects
 items:
   - title: MessiOps
-    description: |-
-      A web app dedicated to show the pure god tier brilliance of Lionel Messi.
-      Still a WIP
+    description: A web app dedicated to show the pure god tier brilliance of Lionel Messi.
     image: /img/messiops2.png
     link: https://messiops.vercel.app/
     tags:
@@ -26,8 +24,7 @@ items:
       - netlifycms
       - chakraui
   - title: CRM API
-    description:
-      A RESTful API for a Customer Relationship Management system using
+    description: A RESTful API for a Customer Relationship Management system using
       fastify + prisma.
     image: /img/crm-api.png
     link: https://crm-api-fastify.herokuapp.com/docs/static/index.html
