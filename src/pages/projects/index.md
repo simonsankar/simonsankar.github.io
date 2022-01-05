@@ -26,7 +26,7 @@ items:
   - title: CRM API
     description: A RESTful API for a Customer Relationship Management system using
       fastify + prisma.
-    image: /img/crm-api.png
+    image: /img/crmapi.png
     link: https://crm-api-fastify.herokuapp.com/docs/static/index.html
     source: https://github.com/simonsankar/crm-api
     tags:
@@ -41,7 +41,7 @@ items:
       Uses nextjs and typescript, styled with antd components.
       Testing should be done with jest + cypress.
       [WIP]
-    image: /img/crm.png
+    image: /img/crmapp.png
     source: https://github.com/simonsankar/crm-app
     link: https://crm-app-demo.vercel.app/
     tags:
