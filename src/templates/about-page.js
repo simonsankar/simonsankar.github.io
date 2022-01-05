@@ -77,10 +77,7 @@ function AboutPage({ data }) {
                   marginTop={4}
                   fontSize={{ base: "lg", md: "lg", lg: "xl", xl: "2xl" }}
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Mollitia doloribus facere delectus eius. Accusantium incidunt
-                  non iusto iste, nihil dolor at praesentium inventore nisi
-                  cupiditate, nesciunt ullam. Modi, id a.
+                  !!!
                 </Text>
               </SlideFade>
             </Flex>
