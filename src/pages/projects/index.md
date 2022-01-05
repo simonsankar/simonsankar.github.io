@@ -41,7 +41,7 @@ items:
       Uses nextjs and typescript, styled with antd components.
       Testing should be done with jest + cypress.
       [WIP]
-    image: /img/crmapp.png
+    image: /img/crm.png
     source: https://github.com/simonsankar/crm-app
     link: https://crm-app-demo.vercel.app/
     tags:
