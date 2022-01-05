@@ -15,11 +15,13 @@ tags:
   - HTML/CSS
   - SASS/LESS
   - JavaScript
+  - TypeScript
   - ReactJS
   - VueJS
   - GatsbyJS
   - NextJS
   - NuxtJS
+  - GraphQL
   - Jest
   - Cypress
   - Flutter
