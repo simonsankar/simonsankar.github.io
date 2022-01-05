@@ -6,6 +6,7 @@ import "@fontsource/days-one/400.css"
 
 import Footer from "./footer"
 import Header from "./header"
+import { Flex } from "@chakra-ui/react"
 
 const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
@@ -21,7 +22,7 @@ const Layout = ({ children, location }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      {children}
+      <Flex style={{ minHeight: `calc(100vh - 105px)` }}>{children}</Flex>
       <Footer />
     </>
   )

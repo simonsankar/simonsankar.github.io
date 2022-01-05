@@ -25,10 +25,7 @@ const IndexPage = () => {
       <Seo title="Home" />
       <Flex
         direction={["column-reverse", "row"]}
-        height="full"
-        width="full"
         style={{
-          minHeight: `calc(100vh - 105px)`,
           backgroundImage: `url("${bg}")`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
