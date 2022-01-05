@@ -4,7 +4,6 @@ import {
   Box,
   Flex,
   useColorModeValue,
-  useColorMode,
   Text,
   Stack,
   IconButton,
@@ -19,21 +18,18 @@ import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons"
 import bg from "../images/bg.svg"
-import bgd from "../images/bg-dark.svg"
 
 const IndexPage = () => {
-  const { colorMode } = useColorMode()
   return (
     <Layout>
       <Seo title="Home" />
-      {/* <img src={bg} /> */}
       <Flex
         direction={["column-reverse", "row"]}
         height="full"
         width="full"
         style={{
           minHeight: `calc(100vh - 105px)`,
-          backgroundImage: `url("${colorMode === "dark" ? bgd : bg}")`,
+          backgroundImage: `url("${bg}")`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "0% 50%",
@@ -43,10 +39,10 @@ const IndexPage = () => {
         color={useColorModeValue("gray.700", "gray.50")}
         flex={1}
         position="relative"
-        align="center"
+        alignItems={"stretch"}
         justifyContent="space-around"
       >
-        <Flex direction="column" flex={3}>
+        <Flex flex={3} justify={"center"} align={"center"}>
           <Flex
             flexDirection={["column-reverse", "row"]}
             alignItems="center"
@@ -169,6 +165,7 @@ const IndexPage = () => {
               boxShadow="lg"
               border="5px solid"
               borderBottomWidth={["20px", "40px"]}
+              backgroundColor={"gray.500"}
               borderColor={useColorModeValue("gray.50", "gray.800")}
               w={[120, 200, 240, 340, 400]}
             >

@@ -19,6 +19,7 @@ import {
   CloseIcon,
   HamburgerIcon,
 } from "@chakra-ui/icons"
+import { useLocation } from "@reach/router"
 
 import { Link as GatsbyLink } from "gatsby"
 import Logo from "./logo"
@@ -26,6 +27,7 @@ import React from "react"
 import ToggleColourMode from "./toggleColourMode"
 
 export default function WithSubnavigation({ siteTitle }) {
+  const location = useLocation()
   const { isOpen, onToggle } = useDisclosure()
 
   return (
@@ -59,7 +61,7 @@ export default function WithSubnavigation({ siteTitle }) {
         </Flex>
 
         <Flex display={{ base: "none", md: "flex" }}>
-          <DesktopNav />
+          <DesktopNav location={location} />
         </Flex>
       </Flex>
 
@@ -70,7 +72,7 @@ export default function WithSubnavigation({ siteTitle }) {
   )
 }
 
-const DesktopNav = () => {
+const DesktopNav = ({ location }) => {
   const linkColor = useColorModeValue("gray.600", "gray.200")
   const linkHoverColor = useColorModeValue("gray.700", "gray.50")
   const popoverContentBgColor = useColorModeValue("gray.50", "gray.700")
@@ -88,6 +90,7 @@ const DesktopNav = () => {
                 fontSize={"xl"}
                 fontWeight={500}
                 textTransform="uppercase"
+                borderBottom={location.pathname === navItem.href ? "4px" : null}
                 color={linkColor}
                 _hover={{
                   textDecoration: "none",
@@ -245,6 +248,10 @@ const NAV_ITEMS = [
   //       },
   //     ],
   //   },
+  {
+    label: "Home",
+    href: "/",
+  },
   {
     label: "About",
     href: "/about",
