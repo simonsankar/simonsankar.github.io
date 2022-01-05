@@ -1,12 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { graphql, useStaticQuery } from "gatsby"
-import "@fontsource/faustina/400.css"
-import "@fontsource/poppins/400.css"
+import "@fontsource/work-sans/400.css"
+import "@fontsource/days-one/400.css"
 
 import Footer from "./footer"
 import Header from "./header"
-import Scroll from "../utils/locomotiveScroll"
 
 const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`

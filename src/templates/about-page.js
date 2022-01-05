@@ -35,9 +35,9 @@ function AboutPage({ data }) {
         style={{
           minHeight: `calc(100vh - 105px)`,
         }}
-        justifyContent="space-between"
+        justifyContent="start"
       >
-        <Flex direction="column" flex={1}>
+        <Flex direction="column" justifyContent={"center"}>
           <SlideFade in={true} offsetX={-90}>
             <Heading
               marginTop={[4, 8]}
@@ -48,7 +48,7 @@ function AboutPage({ data }) {
             </Heading>
           </SlideFade>
           <Box marginBlock={2} height={[5, 10]} borderLeftWidth="5px"></Box>
-          <Flex flex={1} direction={["column", "row"]}>
+          <Flex flex={1} direction={["column", "row"]} alignItems={"center"}>
             <Flex flex={2} flexDirection="column">
               <SlideFade in={true} offsetY={90}>
                 <Text
@@ -68,16 +68,20 @@ function AboutPage({ data }) {
                 <Text
                   color={useColorModeValue("gray.600", "gray.200")}
                   fontWeight="bold"
-                  marginTop={5}
+                  marginTop={2}
                 >
                   <FontAwesomeIcon icon={faMapMarkerAlt} />{" "}
                   {frontmatter.location}
                 </Text>
-
-                <Heading fontSize="3xl" marginTop={12} marginBottom={4}>
-                  {frontmatter.mainpitch.title}
-                </Heading>
-                <Text>{frontmatter.mainpitch.description}</Text>
+                <Text
+                  marginTop={4}
+                  fontSize={{ base: "lg", md: "lg", lg: "xl", xl: "2xl" }}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia doloribus facere delectus eius. Accusantium incidunt
+                  non iusto iste, nihil dolor at praesentium inventore nisi
+                  cupiditate, nesciunt ullam. Modi, id a.
+                </Text>
               </SlideFade>
             </Flex>
             <Flex flex={1} direction="column">
@@ -152,6 +156,17 @@ function AboutPage({ data }) {
               </SlideFade>
             </Flex>
           </Flex>
+        </Flex>
+
+        <Flex direction={"column"}>
+          <SlideFade in={true} offsetY={90}>
+            <Heading fontSize="3xl" marginTop={12} marginBottom={4}>
+              {frontmatter.mainpitch.title}
+            </Heading>
+            <Text fontSize={{ base: "lg", md: "lg", lg: "xl", xl: "2xl" }}>
+              {frontmatter.mainpitch.description}
+            </Text>
+          </SlideFade>
         </Flex>
       </Flex>
     </Layout>

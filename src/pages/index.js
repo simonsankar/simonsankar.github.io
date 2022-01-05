@@ -87,8 +87,8 @@ const IndexPage = () => {
             <SlideFade in={true} offsetY={90}>
               <Box paddingInline={[0, 10, 20, 40]}>
                 <Text
-                  fontFamily="Faustina"
-                  fontSize={{ base: "2xl", md: "3xl", lg: "5xl", xl: "5xl" }}
+                  fontFamily={"heading"}
+                  fontSize={{ base: "3xl", md: "5xl", lg: "7xl", xl: "7xl" }}
                 >
                   Hi There,
                 </Text>
@@ -126,7 +126,7 @@ const IndexPage = () => {
                   </Text>
                 </span>
                 <Text
-                  fontFamily="Faustina"
+                  fontFamily={"heading"}
                   fontSize={{ base: "xl", md: "2xl", lg: "3xl", xl: "5xl" }}
                 >
                   a Frontend Developer who loves building apps!

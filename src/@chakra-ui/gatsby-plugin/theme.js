@@ -5,8 +5,8 @@ const theme = extendTheme({
   fonts: {
     initialColorMode: "light",
     useSystemColorMode: true,
-    heading: "Faustina",
-    body: "Poppins",
+    heading: "Days One",
+    body: "Work Sans",
   },
   colors: {
     brand: {

@@ -18,6 +18,7 @@ exports.createPages = ({ actions, graphql }) => {
               tags
               templateKey
             }
+            timeToRead
           }
         }
       }
@@ -61,6 +62,7 @@ exports.createPages = ({ actions, graphql }) => {
         // additional data can be passed via context
         context: {
           id,
+          timeToRead: edge.node.timeToRead,
         },
       })
     })

@@ -100,6 +100,7 @@ export const query = graphql`
           image
           tags
         }
+        timeToRead
       }
     }
   }
@@ -165,7 +166,7 @@ export const BlogItem = ({ post }) => {
         paddingInline={[0, 8]}
       >
         <BlogTags id={post.id} tags={post.frontmatter.tags} />
-        <Heading marginTop="1">
+        <Heading fontSize={"3xl"} marginTop="1">
           <Link as={GatsbyLink} to={post.fields.slug}>
             {post.frontmatter.title}
           </Link>
@@ -176,7 +177,9 @@ export const BlogItem = ({ post }) => {
           color={useColorModeValue("gray.700", "gray.200")}
           fontSize={{ base: "sm", md: "md", lg: "lg", xl: "lg" }}
         >
-          {post.frontmatter.description}{" "}
+          {post.frontmatter.description}
+        </Text>
+        <Box marginBlock={2}>
           <Button
             size="sm"
             colorScheme="brand"
@@ -186,9 +189,11 @@ export const BlogItem = ({ post }) => {
           >
             Read ⟶
           </Button>
-        </Text>
+        </Box>
         <Box marginBlock="1" height={[3, 7]} borderLeftWidth="3px"></Box>
-        <Text>{post.frontmatter.date}</Text>
+        <Text>
+          {`${post.timeToRead} minute read`} {"•"} {post.frontmatter.date}
+        </Text>
       </Box>
     </Flex>
   )

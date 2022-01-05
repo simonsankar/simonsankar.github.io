@@ -76,6 +76,7 @@ const DesktopNav = ({ location }) => {
   const linkColor = useColorModeValue("gray.600", "gray.200")
   const linkHoverColor = useColorModeValue("gray.700", "gray.50")
   const popoverContentBgColor = useColorModeValue("gray.50", "gray.700")
+  const highlight = useColorModeValue("brand.400", "brand.300")
 
   return (
     <Stack align="center" direction={"row"} spacing={10}>
@@ -87,10 +88,12 @@ const DesktopNav = ({ location }) => {
                 as={GatsbyLink}
                 p={2}
                 to={navItem.href ?? "#"}
+                fontFamily={"Days One"}
                 fontSize={"xl"}
                 fontWeight={500}
                 textTransform="uppercase"
                 borderBottom={location.pathname === navItem.href ? "4px" : null}
+                borderBottomColor={highlight}
                 color={linkColor}
                 _hover={{
                   textDecoration: "none",

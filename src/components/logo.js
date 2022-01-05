@@ -1,4 +1,9 @@
-import { Link, useBreakpointValue, useColorModeValue } from "@chakra-ui/react"
+import {
+  Link,
+  useBreakpointValue,
+  useColorModeValue,
+  Box,
+} from "@chakra-ui/react"
 
 import { Link as GatsbyLink } from "gatsby"
 import React from "react"
@@ -12,9 +17,9 @@ const Logo = () => {
       paddingInline={"2.5"}
       to="/"
       textAlign={useBreakpointValue({ base: "center", md: "left" })}
-      fontFamily={"heading"}
+      fontFamily={"body"}
       fontSize="3xl"
-      fontWeight="bold"
+      // fontWeight="bold"
       letterSpacing="wider"
       border="2px"
       borderBottom="6px solid"

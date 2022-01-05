@@ -1830,15 +1830,15 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/faustina@^4.5.0":
+"@fontsource/days-one@^4.5.0":
   version "4.5.0"
-  resolved "https://registry.yarnpkg.com/@fontsource/faustina/-/faustina-4.5.0.tgz#900c8c0c6a64ced01ef4a22eecac5d265f5b0de8"
-  integrity sha512-vDSaikuKiiR4qgN7hKQ7TLkihu+oitg9bn6MamO8p/FtuP9eguUKSzMKY5ZVKF4drMnqBL0O/WI8TezL3Nlo4A==
+  resolved "https://registry.yarnpkg.com/@fontsource/days-one/-/days-one-4.5.0.tgz#972cbfa89ea98688ca727f780da32c259bcea850"
+  integrity sha512-Iy2I3cvTcNOcLO9HYdSDHwJCZV9dQmB8J+UpOopXDJw6kp+7K39aJc7h8U+zUrxuqQvSDNeRTrV02pS/3K/DOA==
 
-"@fontsource/poppins@^4.5.0":
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-4.5.0.tgz#a419697b85864afbf8363f5c247b1e9d1f117564"
-  integrity sha512-RqgMIQqKHWNH3IUj+a0MAhlb4g5fftsXRTJ2bauefBmfM8Ja5q+qQZjKwyB/iCc+paJD320zFnLJ8G+y1ZyemQ==
+"@fontsource/work-sans@^4.5.2":
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/@fontsource/work-sans/-/work-sans-4.5.2.tgz#d4b8c75bf2e9ba60034508ddd12bfb6c5fc8976a"
+  integrity sha512-/QKXGMopm7qHDDHKYELVLwpIkwEjZauK9emrN9HYAm8pbotRrAlnZM2KrMufG0sm5+PbS/LKhYmOoS5sUCtsWA==
 
 "@fortawesome/fontawesome-common-types@^0.2.36":
   version "0.2.36"
