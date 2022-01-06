@@ -111,7 +111,7 @@ const ProjectsPage = ({ data }) => {
         paddingInline={[8, 8, 8, 8, "15%", "20%"]}
         direction="column"
       >
-        <SlideFade in={true} offsetX={-90}>
+        <SlideFade delay={0.15} in={true} offsetX={-90}>
           <Heading
             marginTop={[4, 8]}
             fontSize={{ base: "4xl", md: "4xl", lg: "5xl", xl: "6xl" }}
@@ -121,24 +121,24 @@ const ProjectsPage = ({ data }) => {
           </Heading>
         </SlideFade>
         <Box marginBlock={2} height={[5, 10]} borderLeftWidth="5px"></Box>
-        <SlideFade in={true} offsetY={90}>
-          <Grid
-            alignItems="flex-start"
-            templateColumns={{
-              base: `repeat(1, 1fr)`,
-              sm: `repeat(1, 1fr)`,
-              md: `repeat(2, 1fr)`,
-              lg: `repeat(3, 1fr)`,
-              xl: `repeat(3, 1fr)`,
-            }}
-            gap={8}
-            paddingBottom={8}
-          >
-            {frontmatter.items.map(item => (
+        <Grid
+          alignItems="flex-start"
+          templateColumns={{
+            base: `repeat(1, 1fr)`,
+            sm: `repeat(1, 1fr)`,
+            md: `repeat(2, 1fr)`,
+            lg: `repeat(3, 1fr)`,
+            xl: `repeat(3, 1fr)`,
+          }}
+          gap={8}
+          paddingBottom={8}
+        >
+          {frontmatter.items.map((item, idx) => (
+            <SlideFade delay={0.15 * (idx + 2)} in={true} offsetY={90}>
               <ProjectItem item={item} key={item.title} />
-            ))}
-          </Grid>
-        </SlideFade>
+            </SlideFade>
+          ))}
+        </Grid>
       </Flex>
     </Layout>
   )
