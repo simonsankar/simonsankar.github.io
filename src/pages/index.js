@@ -87,7 +87,7 @@ const IndexPage = () => {
                   fontFamily={"heading"}
                   fontSize={{ base: "3xl", md: "5xl", lg: "7xl", xl: "7xl" }}
                 >
-                  Hi There,
+                  Hi there,
                 </Text>
               </SlideFade>
 
