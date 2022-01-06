@@ -45,7 +45,7 @@ const IndexPage = () => {
             alignItems="center"
             justify="space-between"
           >
-            <SlideFade in={true} offsetX={-90}>
+            <SlideFade delay={1.05} in={true} offsetX={-90}>
               <Stack
                 direction={["row", "column"]}
                 spacing="4"
@@ -81,14 +81,17 @@ const IndexPage = () => {
                 />
               </Stack>
             </SlideFade>
-            <SlideFade in={true} offsetY={90}>
-              <Box paddingInline={[0, 10, 20, 40]}>
+            <Box paddingInline={[0, 10, 20, 40]}>
+              <SlideFade delay={0.4} in={true} offsetY={90}>
                 <Text
                   fontFamily={"heading"}
                   fontSize={{ base: "3xl", md: "5xl", lg: "7xl", xl: "7xl" }}
                 >
                   Hi There,
                 </Text>
+              </SlideFade>
+
+              <SlideFade delay={0.55} in={true} offsetY={90}>
                 <span>
                   <Text
                     fontSize={{ base: "3xl", md: "6xl", lg: "7xl", xl: "7xl" }}
@@ -122,18 +125,21 @@ const IndexPage = () => {
                     </Text>
                   </Text>
                 </span>
+              </SlideFade>
+              <SlideFade delay={0.7} in={true} offsetY={90}>
                 <Text
                   fontFamily={"heading"}
                   fontSize={{ base: "xl", md: "2xl", lg: "3xl", xl: "5xl" }}
                 >
                   a Frontend Developer who loves building apps!
                 </Text>
-                <Box
-                  marginBlock="2"
-                  height={[10, 20]}
-                  borderLeftWidth="5px"
-                ></Box>
-
+              </SlideFade>
+              <Box
+                marginBlock="2"
+                height={[10, 20]}
+                borderLeftWidth="5px"
+              ></Box>
+              <SlideFade delay={0.85} in={true} offsetY={90}>
                 <Text
                   display="block"
                   fontSize={{ base: "lg", md: "1xl", lg: "2xl", xl: "3xl" }}
@@ -151,13 +157,13 @@ const IndexPage = () => {
                   </Link>{" "}
                   acoloyte and an OG Minecrafter.
                 </Text>
-              </Box>
-            </SlideFade>
+              </SlideFade>
+            </Box>
           </Flex>
         </Flex>
 
         <Flex align="center" justify="center" flex={1} paddingBlock="4">
-          <SlideFade in={true} offsetX={90}>
+          <SlideFade delay={1.05} in={true} offsetX={90}>
             <Box
               boxShadow="lg"
               border="5px solid"
