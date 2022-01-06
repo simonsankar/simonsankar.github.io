@@ -48,7 +48,7 @@ function AboutPage({ data }) {
             </Heading>
           </SlideFade>
           <Box marginBlock={2} height={[5, 10]} borderLeftWidth="5px"></Box>
-          <Flex flex={1} direction={["column", "row"]} alignItems={"center"}>
+          <Flex flex={1} direction={["column", "row"]} alignItems={"start"}>
             <Flex flex={2} flexDirection="column">
               <SlideFade in={true} offsetY={90}>
                 <Text
