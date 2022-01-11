@@ -38,7 +38,7 @@ function AboutPage({ data }) {
         justifyContent="start"
       >
         <Flex direction="column" justifyContent={"center"}>
-          <SlideFade in={true} offsetX={-90}>
+          <SlideFade delay={0.15} in={true} offsetX={-90}>
             <Heading
               marginTop={[4, 8]}
               fontSize={{ base: "4xl", md: "4xl", lg: "5xl", xl: "6xl" }}
@@ -50,7 +50,7 @@ function AboutPage({ data }) {
           <Box marginBlock={2} height={[5, 10]} borderLeftWidth="5px"></Box>
           <Flex flex={1} direction={["column", "row"]} alignItems={"start"}>
             <Flex flex={2} flexDirection="column">
-              <SlideFade in={true} offsetY={90}>
+              <SlideFade delay={0.3} in={true} offsetY={90}>
                 <Text
                   marginTop={-0.5}
                   lineHeight={1}
@@ -82,7 +82,7 @@ function AboutPage({ data }) {
               </SlideFade>
             </Flex>
             <Flex flex={1} direction="column">
-              <SlideFade in={true} offsetX={90}>
+              <SlideFade delay={0.3} in={true} offsetY={90}>
                 <Heading fontSize="3xl" marginBottom={4}>
                   Technologies
                 </Heading>
@@ -156,7 +156,7 @@ function AboutPage({ data }) {
         </Flex>
 
         <Flex direction={"column"}>
-          <SlideFade in={true} offsetY={90}>
+          <SlideFade delay={0.45} in={true} offsetY={90}>
             <Heading fontSize="3xl" marginTop={12} marginBottom={4}>
               {frontmatter.mainpitch.title}
             </Heading>

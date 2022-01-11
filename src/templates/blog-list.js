@@ -53,7 +53,7 @@ const BlogList = ({ data, pageContext }) => {
             }
           >
             {allMarkdownRemark.nodes.map((node, idx) => (
-              <SlideFade delay={0.15 * (idx + 2)} in={true} offsetY={-90}>
+              <SlideFade delay={0.15 * (idx + 2)} in={true} offsetY={90}>
                 <BlogItem key={node.id} post={node} />
               </SlideFade>
             ))}
