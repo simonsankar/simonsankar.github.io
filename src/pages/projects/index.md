@@ -51,18 +51,6 @@ items:
       - antd
       - jest
       - cypress
-  - title: an_me
-    description: >-
-      An anime streaming desktop app built with electron and react.
-
-      Unfortunately, the site that was being scrapped is now defunct, so an_me had an early EOL.
-    image: /img/an_me.png
-    source: https://github.com/simonsankar/an_me
-    tags:
-      - reactjs
-      - electronjs
-      - antd
-      - less
   - title: Succuly
     description: A succulent wiki web app that allows users to share their
       succulents as well as act as a database for identifying succulents while
@@ -88,4 +76,16 @@ items:
       - graphql
       - apollo-server
       - prisma
+  - title: an_me
+    description: >-
+      An anime streaming desktop app built with electron and react.
+
+      Unfortunately, the site that was being scrapped is now defunct, so an_me had an early EOL.
+    image: /img/an_me.png
+    source: https://github.com/simonsankar/an_me
+    tags:
+      - reactjs
+      - electronjs
+      - antd
+      - less
 ---
