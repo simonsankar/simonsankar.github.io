@@ -63,4 +63,29 @@ items:
       - electronjs
       - antd
       - less
+  - title: Succuly
+    description: A succulent wiki web app that allows users to share their
+      succulents as well as act as a database for identifying succulents while
+      giving information on them.
+    image: /img/succuly.png
+    source: https://github.com/simonsankar/succuly
+    link: https://succuly.vercel.app/
+    tags:
+      - typescript
+      - reactjs
+      - nextjs
+      - chakraui
+      - auth0
+      - apollo-client
+  - title: Succuly API
+    description: A graphql api for the Succuly apps using apollo-server and prisma
+      with typescript.
+    image: /img/succuly-api.png
+    source: https://github.com/simonsankar/succuly
+    link: https://succuly-api.herokuapp.com/
+    tags:
+      - typescript
+      - graphql
+      - apollo-server
+      - prisma
 ---
