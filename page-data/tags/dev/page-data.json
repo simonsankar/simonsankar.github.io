@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-tags-page-js",
     "path": "/tags/dev/",
-    "result": {"data":{"allMarkdownRemark":{"nodes":[{"id":"797560f2-b9a1-5c7d-8c68-c61926713fa6","fields":{"slug":"/blog/2021-09-17-my-first-blog/"},"frontmatter":{"title":"My first blog","date":"17/09/2021","description":"Not much going on","image":"/img/rubbersoul.jpg","tags":["dev","code","gatsby"]}}]}},"pageContext":{"tag":"dev"}},
+    "result": {"data":{"allMarkdownRemark":{"nodes":[{"id":"541d9207-480f-5922-97ca-745fdcf252ce","fields":{"slug":"/blog/2022-02-07-not-an-easy-road/"},"frontmatter":{"title":"Not an easy road","date":"07/02/2022","description":"My dev journey from lowly tech support to rockstar developer.","image":"/img/tilshiloh.jpg","tags":["dev"]}}]}},"pageContext":{"tag":"dev"}},
     "staticQueryHashes": ["3649515864","63159454"]}
