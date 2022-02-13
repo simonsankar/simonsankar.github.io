@@ -34,7 +34,7 @@ I also felt like my mental state was taking a toll working on such a lack luster
 
 Luck would have it, and I was offered a junior role and from that point on things were incredible.
 
-They people and environment were amazing, I learnt a ton on how an actual software company runs and all the little processes with scrum, agile etc.
+The people and environment were amazing, I learnt a ton on how an actual software company runs and all the little processes with scrum, agile etc.
 
 I had the creative freedom to build and explore different frameworks and ended up touching a bunch of technologies withing web/hybrid mobile/backend APIs.
 
