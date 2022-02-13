@@ -24,7 +24,8 @@ items:
       - netlifycms
       - chakraui
   - title: CRM API
-    description: A RESTful API for a Customer Relationship Management system using
+    description:
+      A RESTful API for a Customer Relationship Management system using
       fastify + prisma.
     image: /img/crmapi.png
     link: https://crm-api-fastify.herokuapp.com/docs/static/index.html
@@ -35,22 +36,6 @@ items:
       - fastify
       - prisma
       - swagger
-  - title: CRM App
-    description: |-
-      A web app for making use of the CRM API that was developed.
-      Uses nextjs and typescript, styled with antd components.
-      Testing should be done with jest + cypress.
-      [WIP]
-    image: /img/crm.png
-    source: https://github.com/simonsankar/crm-app
-    link: https://crm-app-demo.vercel.app/
-    tags:
-      - typescript
-      - reactjs
-      - nextjs
-      - antd
-      - jest
-      - cypress
   - title: Succuly
     description: A succulent wiki web app that allows users to share their
       succulents as well as act as a database for identifying succulents while
@@ -66,7 +51,8 @@ items:
       - auth0
       - apollo-client
   - title: Succuly API
-    description: A graphql api for the Succuly apps using apollo-server and prisma
+    description:
+      A graphql api for the Succuly apps using apollo-server and prisma
       with typescript.
     image: /img/succuly-api.png
     source: https://github.com/simonsankar/succuly
