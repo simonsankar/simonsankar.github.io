@@ -1,1 +1,0 @@
-{"version":3,"file":"component---src-pages-tags-index-js-59db7591bc4c3597081b.js","mappings":"0JAMA,UAJiB,WACf,OAAO","sources":["webpack://gatsby-starter-default/./src/pages/tags/index.js"],"sourcesContent":["import React from \"react\"\n\nconst TagsPage = () => {\n  return <div>I am tags in page form</div>\n}\n\nexport default TagsPage\n"],"names":[],"sourceRoot":""}

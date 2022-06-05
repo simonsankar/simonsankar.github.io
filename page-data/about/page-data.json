@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-about-page-js",
     "path": "/about/",
-    "result": {"data":{"markdownRemark":{"html":"","frontmatter":{"templateKey":"about-page","title":"About Me","image":"/img/rubbersoul.jpg","name":"Simon Sankar","position":"Frontend Developer","location":"D'Abadie, Trinidad and Tobago","tags":["HTML/CSS","SASS/LESS","JavaScript","TypeScript","ReactJS","VueJS","GatsbyJS","NextJS","NuxtJS","GraphQL","Jest","Cypress","Flutter","Git"],"mainpitch":{"title":"My Career So Far","description":"Need to write something compelling here."}}}},"pageContext":{"id":"5c634782-b87b-59db-b734-9d9e6b380bcf","timeToRead":1}},
+    "result": {"data":{"markdownRemark":{"html":"","frontmatter":{"templateKey":"about-page","title":"About Me","image":"/img/rubbersoul.jpg","name":"Simon Sankar","position":"Frontend Developer","location":"D'Abadie, Trinidad and Tobago","tags":["HTML/CSS","SASS/LESS","JavaScript","TypeScript","ReactJS","VueJS","GatsbyJS","NextJS","NuxtJS","GraphQL","Jest","Cypress","Flutter","Git"],"mainpitch":{"title":"My Career So Far","description":"Need to write something compelling here."}}}},"pageContext":{"id":"52cf11e2-14ba-511a-83c0-0a70e0676eb2","timeToRead":1}},
     "staticQueryHashes": ["3649515864","63159454"]}

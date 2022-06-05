@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-tags-page-js",
     "path": "/tags/java-script/",
-    "result": {"data":{"allMarkdownRemark":{"nodes":[{"id":"5c634782-b87b-59db-b734-9d9e6b380bcf","fields":{"slug":"/about/"},"frontmatter":{"title":"About Me","date":null,"description":null,"image":"/img/rubbersoul.jpg","tags":["HTML/CSS","SASS/LESS","JavaScript","TypeScript","ReactJS","VueJS","GatsbyJS","NextJS","NuxtJS","GraphQL","Jest","Cypress","Flutter","Git"]}}]}},"pageContext":{"tag":"JavaScript"}},
+    "result": {"data":{"allMarkdownRemark":{"nodes":[{"id":"52cf11e2-14ba-511a-83c0-0a70e0676eb2","fields":{"slug":"/about/"},"frontmatter":{"title":"About Me","date":null,"description":null,"image":"/img/rubbersoul.jpg","tags":["HTML/CSS","SASS/LESS","JavaScript","TypeScript","ReactJS","VueJS","GatsbyJS","NextJS","NuxtJS","GraphQL","Jest","Cypress","Flutter","Git"]}}]}},"pageContext":{"tag":"JavaScript"}},
     "staticQueryHashes": ["3649515864","63159454"]}

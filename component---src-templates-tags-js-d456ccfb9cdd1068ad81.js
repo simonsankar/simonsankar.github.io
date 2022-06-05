@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[942],{5929:function(t,e,a){a.r(e);var r=a(7294);e.default=function(){return r.createElement("div",null,"I am a tags for now")}}}]);
-//# sourceMappingURL=component---src-templates-tags-js-d456ccfb9cdd1068ad81.js.map
